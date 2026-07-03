@@ -7,6 +7,7 @@
 -- ===========================================================================
 
 -- Clean up first (safe re-run)
+DROP TABLE IF EXISTS log_events      CASCADE;
 DROP TABLE IF EXISTS export_logs     CASCADE;
 DROP TABLE IF EXISTS risk_metrics    CASCADE;
 DROP TABLE IF EXISTS positions       CASCADE;
@@ -508,3 +509,20 @@ CREATE TABLE export_logs (
 CREATE INDEX IF NOT EXISTS idx_export_logs_name       ON export_logs(export_name);
 CREATE INDEX IF NOT EXISTS idx_export_logs_status     ON export_logs(status);
 CREATE INDEX IF NOT EXISTS idx_export_logs_started_at ON export_logs(started_at DESC);
+
+-- ===========================================================================
+-- LOG_EVENTS — every log line emitted while export.py runs (one row per
+-- logger.info/warning/error/... call), not just the per-run summary above.
+-- ===========================================================================
+CREATE TABLE log_events (
+    id            SERIAL PRIMARY KEY,
+    ts            TIMESTAMP    NOT NULL DEFAULT NOW(),
+    level         VARCHAR(20)  NOT NULL,
+    logger        VARCHAR(255),
+    export_name   VARCHAR(255),
+    message       TEXT         NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_log_events_export_name ON log_events(export_name);
+CREATE INDEX IF NOT EXISTS idx_log_events_ts           ON log_events(ts DESC);
+CREATE INDEX IF NOT EXISTS idx_log_events_level        ON log_events(level);

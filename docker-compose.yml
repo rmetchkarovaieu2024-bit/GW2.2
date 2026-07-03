@@ -44,6 +44,18 @@ services:
       - "2222:22"
     command: sftp_user:sftp_pass:1001:100:incoming
 
+  # Local test SMTP server so `delivery: email` exports can be exercised
+  # end-to-end without a real mail provider. Every email sent to it is just
+  # caught (never actually delivered) and viewable in its web UI at
+  # http://localhost:8025 — no auth, no TLS needed for local testing.
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: export-lite-mailhog
+    restart: unless-stopped
+    ports:
+      - "1025:1025"   # SMTP
+      - "8025:8025"   # web UI
+
 volumes:
   postgres_data:
     driver: local

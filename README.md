@@ -1,8 +1,8 @@
 # export-lite
 
-A stripped-down version of the export system: **CSV/Excel only, SFTP only, on-demand only.**
-No scheduler, no queue, no plugin registry — just a CLI script with a full audit trail of
-every run (ported from the tracking part of the
+A stripped-down version of the export system: **CSV/Excel only, SFTP or email delivery,
+on-demand only.** No scheduler, no queue, no plugin registry — just a CLI script with a
+full audit trail of every run (ported from the tracking part of the
 [GW repo](https://github.com/rmetchkarovaieu2024-bit/GW)).
 
 ## Setup
@@ -10,7 +10,7 @@ every run (ported from the tracking part of the
 ```bash
 python3 -m venv venv && source venv/bin/activate
 pip3 install -r requirements.txt
-cp .env.example .env       # fill in DATABASE_URL and SFTP_* values
+cp .env.example .env       # fill in DATABASE_URL, SFTP_*, and SMTP_* values
 ```
 
 ### Database
@@ -49,6 +49,13 @@ a real server. Uploaded files live inside the container only (not persisted to a
 host volume — inspect with `docker exec export-lite-sftp ls /home/sftp_user/incoming`).
 Point `SFTP_HOST`/`SFTP_PORT`/credentials at a real server when you're ready.
 
+### Email
+
+`docker compose up -d` also starts a local test SMTP server ([MailHog](https://github.com/mailhog/MailHog)),
+pre-wired into `.env.example`. Exports with `delivery: email` are sent through it; nothing
+is actually delivered externally — open http://localhost:8025 to see caught mail. Point
+`SMTP_HOST`/`SMTP_PORT`/credentials at a real mail server when you're ready.
+
 ## Configure what to export
 
 Edit `definitions.yaml`. Each entry needs:
@@ -58,6 +65,9 @@ Edit `definitions.yaml`. Each entry needs:
   query: "SELECT * FROM my_table WHERE ..."
   format: csv        # or excel
   remote_filename: "my_export_{date}.csv"   # {date} -> YYYY-MM-DD
+  delivery: sftp     # or "email" (defaults to sftp if omitted)
+  email_to:          # required when delivery: email
+    - someone@example.com
 ```
 
 ## Run
@@ -66,55 +76,69 @@ Edit `definitions.yaml`. Each entry needs:
 python3 export.py --list              # see available exports
 python3 export.py --name my_export    # run one
 python3 export.py --all               # run all of them
-python3 export.py --name my_export --local-only   # write locally only, skip SFTP upload
+python3 export.py --name my_export --local-only   # write locally only, skip delivery
 ```
 
 > On some systems (especially macOS), the `python` command may not be available by default. Use `python3` instead.
 
-Each run: executes the query -> writes CSV/Excel to `LOCAL_OUTPUT_DIR` -> uploads it to
-`SFTP_REMOTE_DIR` on the configured SFTP server -> logs progress -> records the outcome.
+Each run: executes the query -> writes CSV/Excel to `LOCAL_OUTPUT_DIR` -> delivers it via
+SFTP (upload to `SFTP_REMOTE_DIR`) or email (attachment via SMTP), per that export's
+`delivery` setting -> logs progress -> records the outcome.
 
 ## Tracking & logging
 
-Every run of `export.py`, whether it succeeds or fails, is logged in two places:
+Every run of `export.py`, whether it succeeds or fails, is recorded at two levels:
 
-- **Console + rotating file** (`logs/export.log` by default) via `logging_setup.py`.
-  Controlled with `LOG_LEVEL` (`DEBUG`/`INFO`/`WARNING`/`ERROR`), `LOG_FORMAT`
-  (`text` for humans, `json` for shipping to ELK/Loki), and `LOG_DIR`.
-- **`export_logs` table** in `DATABASE_URL` via `tracking.py` — one row per run with
-  `status` (`running`/`success`/`failed`), `started_at`/`completed_at`/`duration_ms`,
-  `row_count`, `file_size_bytes`, `file_path`, `remote_path`, and `error_message` on failure.
-  This is the same audit-trail shape as the `export_logs` table in the original GW repo,
-  trimmed down (no `export_id`/`schedule_id` foreign keys, since export-lite's exports
-  live in `definitions.yaml` rather than a database table).
+- **`export_logs`** — one row per run: `status` (`running`/`success`/`failed`),
+  `started_at`/`completed_at`/`duration_ms`, `row_count`, `file_size_bytes`,
+  `file_path`, `remote_path`, `error_message`.
+- **`log_events`** — one row per individual log line emitted while that run
+  happened (every `logger.info`/`.error`/... call: `running query...`, `got N rows`,
+  `writing csv -> ...`, `uploading via SFTP -> ...`, and the error message + level
+  on failure). This is the full play-by-play, not just the summary.
 
-Query it directly, e.g.:
+Both tables live in `DATABASE_URL`, written by `tracking.py`. `logging_setup.py` wires
+a `DBLogHandler` into the standard `logging` module so every `logger.*()` call in the
+app writes to `log_events` automatically — no need to call `tracking` directly outside
+of `export.py`'s run/success/failure calls. Logs also go to the console and to
+`logs/export.log` (rotating, `LOG_DIR`) as a local backup in case the database is down.
+`LOG_LEVEL` (`DEBUG`/`INFO`/`WARNING`/`ERROR`) controls verbosity everywhere.
+
+Query the audit trail directly, e.g.:
 
 ```sql
+-- per-run summary
 SELECT export_name, status, started_at, duration_ms, row_count, error_message
 FROM export_logs
 ORDER BY started_at DESC
 LIMIT 20;
+
+-- full play-by-play for one run
+SELECT ts, level, message
+FROM log_events
+WHERE export_name = 'daily_transactions'
+ORDER BY ts;
 ```
 
-If your local Postgres volume was created before this table existed, recreate it with
-`docker compose down -v && docker compose up -d` (or run the `export_logs` block from
-`scripts/init_db.sql` manually).
+If your local Postgres volume was created before these tables existed, recreate it with
+`docker compose down -v && docker compose up -d` (or run the `export_logs`/`log_events`
+blocks from `scripts/init_db.sql` manually).
 
 ## Files
 
 ```
 export.py                    CLI entrypoint
 db.py                        runs the SQL query, returns a DataFrame
-tracking.py                  records each run to the export_logs table
-logging_setup.py             console + rotating file logging
+tracking.py                  records runs (export_logs) and log lines (log_events) to the DB
+logging_setup.py             console + rotating file + DB logging (wires DBLogHandler into logging)
 exporters/csv_exporter.py    DataFrame -> .csv
 exporters/excel_exporter.py  DataFrame -> .xlsx
 delivery/sftp_delivery.py    uploads a file over SFTP (password or key auth)
+delivery/email_delivery.py   emails a file as an attachment via SMTP
 definitions.yaml             what to export
-scripts/init_db.sql          creates + seeds the example Postgres tables + export_logs
-docker-compose.yml           spins up the example Postgres DB + a local test SFTP server
-.env.example                 DB + SFTP + logging config template
+scripts/init_db.sql          creates + seeds the example Postgres tables + export_logs/log_events
+docker-compose.yml           spins up the example Postgres DB + local test SFTP + SMTP servers
+.env.example                 DB + SFTP + SMTP + logging config template
 ```
 
 ## Notes

@@ -1,163 +1,37 @@
-2026-07-03 14:49:32 [INFO    ] __main__ | [clients_csv] running query...
-2026-07-03 14:49:32 [INFO    ] __main__ | [clients_csv] got 1000 rows
-2026-07-03 14:49:32 [INFO    ] __main__ | [clients_csv] writing csv -> ./output/clients_2026-07-03.csv
-2026-07-03 14:49:32 [INFO    ] __main__ | [clients_csv] done. Local path: ./output/clients_2026-07-03.csv
-2026-07-03 14:49:38 [INFO    ] __main__ | [daily_transactions] running query...
-2026-07-03 14:49:38 [INFO    ] __main__ | [daily_transactions] got 55 rows
-2026-07-03 14:49:38 [INFO    ] __main__ | [daily_transactions] writing csv -> ./output/daily_transactions_2026-07-03.csv
-2026-07-03 14:49:38 [INFO    ] __main__ | [daily_transactions] done. Local path: ./output/daily_transactions_2026-07-03.csv
-2026-07-03 14:49:38 [INFO    ] __main__ | [weekly_revenue_report] running query...
-2026-07-03 14:49:38 [INFO    ] __main__ | [weekly_revenue_report] got 4 rows
-2026-07-03 14:49:38 [INFO    ] __main__ | [weekly_revenue_report] writing excel -> ./output/weekly_revenue_report_2026-07-03.xlsx
-2026-07-03 14:49:38 [INFO    ] __main__ | [weekly_revenue_report] done. Local path: ./output/weekly_revenue_report_2026-07-03.xlsx
-2026-07-03 14:49:38 [INFO    ] __main__ | [top_tier_client_feed] running query...
-2026-07-03 14:49:38 [ERROR   ] __main__ | [top_tier_client_feed] export failed: (psycopg2.errors.UndefinedColumn) column c.email does not exist
-LINE 5:     c.email AS contact_email,
-            ^
-
-[SQL: SELECT
-    c.client_code,
-    c.company_name,
-    c.contact_person,
-    c.email AS contact_email,
-    c.country,
-    SUM(a.balance) AS total_balance
-FROM clients c JOIN accounts a ON a.client_id = c.id WHERE c.status = 'active' GROUP BY c.client_code, c.company_name, c.contact_person, c.email, c.country ORDER BY total_balance DESC
-]
-(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-07-03 15:07:19 [INFO    ] __main__             | [clients_csv] running query...
+2026-07-03 15:07:19 [INFO    ] __main__             | [clients_csv] got 1000 rows
+2026-07-03 15:07:19 [INFO    ] __main__             | [clients_csv] writing csv -> ./output/clients_2026-07-03.csv
+2026-07-03 15:07:19 [INFO    ] __main__             | [clients_csv] uploading via SFTP -> clients_2026-07-03.csv
+2026-07-03 15:07:19 [INFO    ] __main__             | [clients_csv] done. Remote path: /incoming/clients_2026-07-03.csv
+2026-07-03 15:08:19 [INFO    ] __main__             | [top_tier_client_feed] running query...
+2026-07-03 15:08:19 [INFO    ] __main__             | [top_tier_client_feed] got 953 rows
+2026-07-03 15:08:19 [INFO    ] __main__             | [top_tier_client_feed] writing csv -> ./output/top_tier_client_feed_2026-07-03.csv
+2026-07-03 15:08:19 [INFO    ] __main__             | [top_tier_client_feed] uploading via SFTP -> top_tier_client_feed_2026-07-03.csv
+2026-07-03 15:08:20 [INFO    ] __main__             | [top_tier_client_feed] done. Remote path: /incoming/top_tier_client_feed_2026-07-03.csv
+2026-07-03 16:23:59 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-03 16:23:59 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-03 16:23:59 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-03.csv
+2026-07-03 16:23:59 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-03.csv
+2026-07-03 16:24:00 [INFO    ] __main__             | [clients_email_digest] done. Sent to: raya.metche@gmail.com
+2026-07-03 16:28:57 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-03 16:28:57 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-03 16:28:57 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-03.csv
+2026-07-03 16:28:57 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-03.csv
+2026-07-03 16:28:58 [ERROR   ] __main__             | [clients_email_digest] export failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-477db3dbb01sm18159827f8f.1 - gsmtp')
 Traceback (most recent call last):
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
-    self.dialect.do_execute(
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
-    cursor.execute(statement, parameters)
-psycopg2.errors.UndefinedColumn: column c.email does not exist
-LINE 5:     c.email AS contact_email,
-            ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/Users/rayametche/Downloads/export-lite/export.py", line 49, in run_export
-    df = run_query(definition["query"])
-  File "/Users/rayametche/Downloads/export-lite/db.py", line 11, in run_query
-    result = conn.execute(text(query))
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
-    return meth(
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
-    return connection._execute_clauseelement(
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
-    ret = self._execute_context(
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
-    return self._exec_single_context(
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
-    self._handle_dbapi_exception(
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
-    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
-    self.dialect.do_execute(
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
-    cursor.execute(statement, parameters)
-sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column c.email does not exist
-LINE 5:     c.email AS contact_email,
-            ^
-
-[SQL: SELECT
-    c.client_code,
-    c.company_name,
-    c.contact_person,
-    c.email AS contact_email,
-    c.country,
-    SUM(a.balance) AS total_balance
-FROM clients c JOIN accounts a ON a.client_id = c.id WHERE c.status = 'active' GROUP BY c.client_code, c.company_name, c.contact_person, c.email, c.country ORDER BY total_balance DESC
-]
-(Background on this error at: https://sqlalche.me/e/20/f405)
-2026-07-03 14:49:59 [INFO    ] __main__ | [daily_transactions] running query...
-2026-07-03 14:49:59 [INFO    ] __main__ | [daily_transactions] got 55 rows
-2026-07-03 14:49:59 [INFO    ] __main__ | [daily_transactions] writing csv -> ./output/daily_transactions_2026-07-03.csv
-2026-07-03 14:49:59 [INFO    ] __main__ | [daily_transactions] done. Local path: ./output/daily_transactions_2026-07-03.csv
-2026-07-03 14:49:59 [INFO    ] __main__ | [weekly_revenue_report] running query...
-2026-07-03 14:49:59 [INFO    ] __main__ | [weekly_revenue_report] got 4 rows
-2026-07-03 14:49:59 [INFO    ] __main__ | [weekly_revenue_report] writing excel -> ./output/weekly_revenue_report_2026-07-03.xlsx
-2026-07-03 14:49:59 [INFO    ] __main__ | [weekly_revenue_report] done. Local path: ./output/weekly_revenue_report_2026-07-03.xlsx
-2026-07-03 14:49:59 [INFO    ] __main__ | [top_tier_client_feed] running query...
-2026-07-03 14:49:59 [INFO    ] __main__ | [top_tier_client_feed] got 953 rows
-2026-07-03 14:49:59 [INFO    ] __main__ | [top_tier_client_feed] writing csv -> ./output/top_tier_client_feed_2026-07-03.csv
-2026-07-03 14:49:59 [INFO    ] __main__ | [top_tier_client_feed] done. Local path: ./output/top_tier_client_feed_2026-07-03.csv
-2026-07-03 14:49:59 [INFO    ] __main__ | [clients_csv] running query...
-2026-07-03 14:49:59 [INFO    ] __main__ | [clients_csv] got 1000 rows
-2026-07-03 14:49:59 [INFO    ] __main__ | [clients_csv] writing csv -> ./output/clients_2026-07-03.csv
-2026-07-03 14:49:59 [INFO    ] __main__ | [clients_csv] done. Local path: ./output/clients_2026-07-03.csv
-2026-07-03 14:50:29 [INFO    ] __main__ | [clients_csv] running query...
-2026-07-03 14:50:29 [INFO    ] __main__ | [clients_csv] got 1000 rows
-2026-07-03 14:50:29 [INFO    ] __main__ | [clients_csv] writing csv -> ./output/clients_2026-07-03.csv
-2026-07-03 14:50:29 [INFO    ] __main__ | [clients_csv] uploading via SFTP -> clients_2026-07-03.csv
-2026-07-03 14:50:29 [ERROR   ] __main__ | [clients_csv] export failed: [Errno 8] nodename nor servname provided, or not known
-Traceback (most recent call last):
-  File "/Users/rayametche/Downloads/export-lite/export.py", line 62, in run_export
-    remote_path = sftp_delivery.upload(local_path, remote_filename)
-  File "/Users/rayametche/Downloads/export-lite/delivery/sftp_delivery.py", line 15, in upload
-    transport = paramiko.Transport((host, port))
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/paramiko/transport.py", line 456, in __init__
-    addrinfos = socket.getaddrinfo(
-  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno 8] nodename nor servname provided, or not known
-2026-07-03 14:52:42 [INFO    ] __main__ | [clients_csv] running query...
-2026-07-03 14:52:42 [INFO    ] __main__ | [clients_csv] got 1000 rows
-2026-07-03 14:52:42 [INFO    ] __main__ | [clients_csv] writing csv -> ./output/clients_2026-07-03.csv
-2026-07-03 14:52:42 [INFO    ] __main__ | [clients_csv] uploading via SFTP -> clients_2026-07-03.csv
-2026-07-03 14:52:42 [ERROR   ] __main__ | [clients_csv] export failed: [Errno 13] Permission denied
-Traceback (most recent call last):
-  File "/Users/rayametche/Downloads/export-lite/export.py", line 62, in run_export
-    remote_path = sftp_delivery.upload(local_path, remote_filename)
-  File "/Users/rayametche/Downloads/export-lite/delivery/sftp_delivery.py", line 26, in upload
-    sftp.put(local_path, remote_path)
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 759, in put
-    return self.putfo(fl, remotepath, file_size, callback, confirm)
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 714, in putfo
-    with self.file(remotepath, "wb") as fr:
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 372, in open
-    t, msg = self._request(CMD_OPEN, filename, imode, attrblock)
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 857, in _request
-    return self._read_response(num)
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 909, in _read_response
-    self._convert_status(msg)
-  File "/Users/rayametche/Downloads/export-lite/venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 940, in _convert_status
-    raise IOError(errno.EACCES, text)
-PermissionError: [Errno 13] Permission denied
-2026-07-03 14:53:28 [INFO    ] __main__ | [clients_csv] running query...
-2026-07-03 14:53:28 [INFO    ] __main__ | [clients_csv] got 1000 rows
-2026-07-03 14:53:28 [INFO    ] __main__ | [clients_csv] writing csv -> ./output/clients_2026-07-03.csv
-2026-07-03 14:53:28 [INFO    ] __main__ | [clients_csv] uploading via SFTP -> clients_2026-07-03.csv
-2026-07-03 14:53:28 [INFO    ] __main__ | [clients_csv] done. Remote path: /incoming/clients_2026-07-03.csv
-2026-07-03 14:53:39 [INFO    ] __main__ | [daily_transactions] running query...
-2026-07-03 14:53:39 [INFO    ] __main__ | [daily_transactions] got 55 rows
-2026-07-03 14:53:39 [INFO    ] __main__ | [daily_transactions] writing csv -> ./output/daily_transactions_2026-07-03.csv
-2026-07-03 14:53:39 [INFO    ] __main__ | [daily_transactions] uploading via SFTP -> daily_transactions_2026-07-03.csv
-2026-07-03 14:53:39 [INFO    ] __main__ | [daily_transactions] done. Remote path: /incoming/daily_transactions_2026-07-03.csv
-2026-07-03 14:53:39 [INFO    ] __main__ | [weekly_revenue_report] running query...
-2026-07-03 14:53:39 [INFO    ] __main__ | [weekly_revenue_report] got 4 rows
-2026-07-03 14:53:39 [INFO    ] __main__ | [weekly_revenue_report] writing excel -> ./output/weekly_revenue_report_2026-07-03.xlsx
-2026-07-03 14:53:39 [INFO    ] __main__ | [weekly_revenue_report] uploading via SFTP -> weekly_revenue_report_2026-07-03.xlsx
-2026-07-03 14:53:40 [INFO    ] __main__ | [weekly_revenue_report] done. Remote path: /incoming/weekly_revenue_report_2026-07-03.xlsx
-2026-07-03 14:53:40 [INFO    ] __main__ | [top_tier_client_feed] running query...
-2026-07-03 14:53:40 [INFO    ] __main__ | [top_tier_client_feed] got 953 rows
-2026-07-03 14:53:40 [INFO    ] __main__ | [top_tier_client_feed] writing csv -> ./output/top_tier_client_feed_2026-07-03.csv
-2026-07-03 14:53:40 [INFO    ] __main__ | [top_tier_client_feed] uploading via SFTP -> top_tier_client_feed_2026-07-03.csv
-2026-07-03 14:53:40 [INFO    ] __main__ | [top_tier_client_feed] done. Remote path: /incoming/top_tier_client_feed_2026-07-03.csv
-2026-07-03 14:53:40 [INFO    ] __main__ | [clients_csv] running query...
-2026-07-03 14:53:40 [INFO    ] __main__ | [clients_csv] got 1000 rows
-2026-07-03 14:53:40 [INFO    ] __main__ | [clients_csv] writing csv -> ./output/clients_2026-07-03.csv
-2026-07-03 14:53:40 [INFO    ] __main__ | [clients_csv] uploading via SFTP -> clients_2026-07-03.csv
-2026-07-03 14:53:40 [INFO    ] __main__ | [clients_csv] done. Remote path: /incoming/clients_2026-07-03.csv
-2026-07-03 14:54:39 [INFO    ] __main__ | [clients_csv] running query...
-2026-07-03 14:54:39 [INFO    ] __main__ | [clients_csv] got 1000 rows
-2026-07-03 14:54:39 [INFO    ] __main__ | [clients_csv] writing csv -> ./output/clients_2026-07-03.csv
-2026-07-03 14:54:39 [INFO    ] __main__ | [clients_csv] uploading via SFTP -> clients_2026-07-03.csv
-2026-07-03 14:54:39 [INFO    ] __main__ | [clients_csv] done. Remote path: /incoming/clients_2026-07-03.csv
-2026-07-03 14:55:41 [INFO    ] __main__ | [weekly_revenue_report] running query...
-2026-07-03 14:55:41 [INFO    ] __main__ | [weekly_revenue_report] got 4 rows
-2026-07-03 14:55:41 [INFO    ] __main__ | [weekly_revenue_report] writing excel -> ./output/weekly_revenue_report_2026-07-03.xlsx
-2026-07-03 14:55:41 [INFO    ] __main__ | [weekly_revenue_report] uploading via SFTP -> weekly_revenue_report_2026-07-03.xlsx
-2026-07-03 14:55:41 [INFO    ] __main__ | [weekly_revenue_report] done. Remote path: /incoming/weekly_revenue_report_2026-07-03.xlsx
+  File "/Users/rayametche/Downloads/export-lite/export.py", line 71, in run_export
+    remote_path = email_delivery.send(local_path, remote_filename, recipients)
+  File "/Users/rayametche/Downloads/export-lite/delivery/email_delivery.py", line 35, in send
+    smtp.login(username, password)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 745, in login
+    raise last_exception
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 734, in login
+    (code, resp) = self.auth(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 657, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-477db3dbb01sm18159827f8f.1 - gsmtp')
+2026-07-03 16:46:56 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-03 16:46:56 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-03 16:46:56 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-03.csv
+2026-07-03 16:46:56 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-03.csv
+2026-07-03 16:46:58 [INFO    ] __main__             | [clients_email_digest] done. Sent to: raya.metche@gmail.com

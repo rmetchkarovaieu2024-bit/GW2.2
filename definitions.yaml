@@ -5,6 +5,9 @@
 #
 # format: "csv" or "excel"
 # remote_filename supports a {date} placeholder -> current date (YYYY-MM-DD)
+# delivery: "sftp" (default) or "email"
+#   - sftp: uploaded to SFTP_REMOTE_DIR on the configured SFTP server
+#   - email: sent as an attachment to the addresses in email_to, via SMTP_* config
 #
 # These queries target the financial demo dataset in scripts/init_db.sql
 # (clients, accounts, transactions, gl_entries, positions, risk_metrics,
@@ -31,6 +34,7 @@ exports:
       ORDER BY t.trade_date DESC
     format: csv
     remote_filename: "daily_transactions_{date}.csv"
+    delivery: sftp
 
   - name: weekly_revenue_report
     description: "Weekly revenue by GL line (accounts starting '4'), Excel, delivered to SFTP."
@@ -46,6 +50,7 @@ exports:
       ORDER BY revenue DESC
     format: excel
     remote_filename: "weekly_revenue_report_{date}.xlsx"
+    delivery: sftp
 
   - name: top_tier_client_feed
     description: "Active clients with the highest total account balance, delivered to partner SFTP."
@@ -64,6 +69,7 @@ exports:
       ORDER BY total_balance DESC
     format: csv
     remote_filename: "top_tier_client_feed_{date}.csv"
+    delivery: sftp
 
   - name: clients_csv
     description: "Full client list, delivered to SFTP."
@@ -79,3 +85,22 @@ exports:
       ORDER BY onboarded_date DESC
     format: csv
     remote_filename: "clients_{date}.csv"
+    delivery: sftp
+
+  - name: clients_email_digest
+    description: "Full client list, emailed as a CSV attachment to the ops distribution list."
+    query: >
+      SELECT
+          client_code,
+          company_name,
+          country,
+          industry,
+          status,
+          onboarded_date AS created_at
+      FROM clients
+      ORDER BY onboarded_date DESC
+    format: csv
+    remote_filename: "clients_digest_{date}.csv"
+    delivery: email
+    email_to:
+      - raya.metche@gmail.com
