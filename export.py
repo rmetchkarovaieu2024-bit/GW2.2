@@ -10,6 +10,7 @@ Usage:
 import argparse
 import os
 import sys
+import zipfile
 from datetime import date
 
 import yaml
@@ -35,6 +36,15 @@ def load_definitions():
     with open(DEFINITIONS_PATH) as f:
         data = yaml.safe_load(f)
     return {d["name"]: d for d in data["exports"]}
+
+
+def zip_export_file(local_path: str, remote_filename: str) -> tuple:
+    """Zips local_path (arcname = remote_filename). Returns (zip_local_path, zip_remote_filename)."""
+    zip_local_path = f"{local_path}.zip"
+    zip_remote_filename = f"{remote_filename}.zip"
+    with zipfile.ZipFile(zip_local_path, "w", zipfile.ZIP_DEFLATED) as zf:
+        zf.write(local_path, arcname=remote_filename)
+    return zip_local_path, zip_remote_filename
 
 
 def run_export(definition: dict, output_dir: str, upload: bool = True, triggered_by: str = "manual"):
@@ -65,14 +75,19 @@ def run_export(definition: dict, output_dir: str, upload: bool = True, triggered
 
             remote_path = None
             if upload:
+                deliver_path, deliver_filename = local_path, remote_filename
+                if definition.get("zip", True):
+                    deliver_path, deliver_filename = zip_export_file(local_path, remote_filename)
+                    logger.info(f"zipped -> {deliver_path}")
+
                 if delivery == "email":
                     recipients = definition["email_to"]
-                    logger.info(f"emailing to {', '.join(recipients)} -> {remote_filename}")
-                    remote_path = email_delivery.send(local_path, remote_filename, recipients)
+                    logger.info(f"emailing to {', '.join(recipients)} -> {deliver_filename}")
+                    remote_path = email_delivery.send(deliver_path, deliver_filename, recipients)
                     logger.info(f"done. Sent to: {remote_path}")
                 else:
-                    logger.info(f"uploading via SFTP -> {remote_filename}")
-                    remote_path = sftp_delivery.upload(local_path, remote_filename)
+                    logger.info(f"uploading via SFTP -> {deliver_filename}")
+                    remote_path = sftp_delivery.upload(deliver_path, deliver_filename)
                     logger.info(f"done. Remote path: {remote_path}")
             else:
                 logger.info(f"done. Local path: {local_path}")

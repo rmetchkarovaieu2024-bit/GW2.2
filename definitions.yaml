@@ -8,6 +8,8 @@
 # delivery: "sftp" (default) or "email"
 #   - sftp: uploaded to SFTP_REMOTE_DIR on the configured SFTP server
 #   - email: sent as an attachment to the addresses in email_to, via SMTP_* config
+# zip: true (default) or false — whether the delivered file is compressed into
+#   a .zip first. Only affects delivery; --local-only always writes the plain file.
 #
 # These queries target the financial demo dataset in scripts/init_db.sql
 # (clients, accounts, transactions, gl_entries, positions, risk_metrics,
@@ -104,3 +106,25 @@ exports:
     delivery: email
     email_to:
       - raya.metche@gmail.com
+
+  - name: top_tier_client_feed_raw
+    description: "Same as top_tier_client_feed, but the partner's ingestion job expects a plain CSV, not a zip."
+    query: >
+      SELECT
+          c.client_code,
+          c.company_name,
+          c.contact_person,
+          c.contact_email,
+          c.country,
+          SUM(a.balance) AS total_balance
+      FROM clients c
+      JOIN accounts a ON a.client_id = c.id
+      WHERE c.status = 'active'
+      GROUP BY c.client_code, c.company_name, c.contact_person, c.contact_email, c.country
+      ORDER BY total_balance DESC
+    format: csv
+    remote_filename: "top_tier_client_feed_raw_{date}.csv"
+    delivery: email
+    email_to:
+      - raya.metche@gmail.com
+    zip: true

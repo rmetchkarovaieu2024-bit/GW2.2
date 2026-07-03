@@ -35,3 +35,32 @@ smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepte
 2026-07-03 16:46:56 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-03.csv
 2026-07-03 16:46:56 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-03.csv
 2026-07-03 16:46:58 [INFO    ] __main__             | [clients_email_digest] done. Sent to: raya.metche@gmail.com
+2026-07-03 16:53:40 [INFO    ] export               | [clients_email_digest] running query...
+2026-07-03 16:53:40 [INFO    ] export               | [clients_email_digest] got 1000 rows
+2026-07-03 16:53:40 [INFO    ] export               | [clients_email_digest] writing csv -> output/clients_digest_2026-07-03.csv
+2026-07-03 16:53:41 [INFO    ] export               | [clients_email_digest] zipped -> output/clients_digest_2026-07-03.csv.zip
+2026-07-03 16:53:41 [INFO    ] export               | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-03.csv.zip
+2026-07-03 16:53:41 [INFO    ] export               | [clients_email_digest] done. Sent to: raya.metche@gmail.com
+2026-07-03 16:53:56 [INFO    ] export               | [clients_csv] running query...
+2026-07-03 16:53:56 [INFO    ] export               | [clients_csv] got 1000 rows
+2026-07-03 16:53:56 [INFO    ] export               | [clients_csv] writing csv -> output/clients_2026-07-03.csv
+2026-07-03 16:53:56 [INFO    ] export               | [clients_csv] zipped -> output/clients_2026-07-03.csv.zip
+2026-07-03 16:53:56 [INFO    ] export               | [clients_csv] uploading via SFTP -> clients_2026-07-03.csv.zip
+2026-07-03 16:53:56 [INFO    ] export               | [clients_csv] done. Remote path: /incoming/clients_2026-07-03.csv.zip
+2026-07-03 16:57:39 [INFO    ] export               | [clients_csv_nozip_test] running query...
+2026-07-03 16:57:39 [INFO    ] export               | [clients_csv_nozip_test] got 1000 rows
+2026-07-03 16:57:39 [INFO    ] export               | [clients_csv_nozip_test] writing csv -> output/clients_2026-07-03.csv
+2026-07-03 16:57:39 [INFO    ] export               | [clients_csv_nozip_test] uploading via SFTP -> clients_2026-07-03.csv
+2026-07-03 16:57:40 [INFO    ] export               | [clients_csv_nozip_test] done. Remote path: /incoming/clients_2026-07-03.csv
+2026-07-03 16:59:51 [INFO    ] export               | [top_tier_client_feed_raw] running query...
+2026-07-03 16:59:51 [INFO    ] export               | [top_tier_client_feed_raw] got 953 rows
+2026-07-03 16:59:51 [INFO    ] export               | [top_tier_client_feed_raw] writing csv -> output/top_tier_client_feed_raw_2026-07-03.csv
+2026-07-03 16:59:51 [INFO    ] export               | [top_tier_client_feed_raw] zipped -> output/top_tier_client_feed_raw_2026-07-03.csv.zip
+2026-07-03 16:59:51 [INFO    ] export               | [top_tier_client_feed_raw] uploading via SFTP -> top_tier_client_feed_raw_2026-07-03.csv.zip
+2026-07-03 16:59:51 [INFO    ] export               | [top_tier_client_feed_raw] done. Remote path: /incoming/top_tier_client_feed_raw_2026-07-03.csv.zip
+2026-07-03 17:01:14 [INFO    ] __main__             | [top_tier_client_feed_raw] running query...
+2026-07-03 17:01:14 [INFO    ] __main__             | [top_tier_client_feed_raw] got 953 rows
+2026-07-03 17:01:14 [INFO    ] __main__             | [top_tier_client_feed_raw] writing csv -> ./output/top_tier_client_feed_raw_2026-07-03.csv
+2026-07-03 17:01:14 [INFO    ] __main__             | [top_tier_client_feed_raw] zipped -> ./output/top_tier_client_feed_raw_2026-07-03.csv.zip
+2026-07-03 17:01:14 [INFO    ] __main__             | [top_tier_client_feed_raw] emailing to raya.metche@gmail.com -> top_tier_client_feed_raw_2026-07-03.csv.zip
+2026-07-03 17:01:16 [INFO    ] __main__             | [top_tier_client_feed_raw] done. Sent to: raya.metche@gmail.com

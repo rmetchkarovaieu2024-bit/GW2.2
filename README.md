@@ -68,6 +68,7 @@ Edit `definitions.yaml`. Each entry needs:
   delivery: sftp     # or "email" (defaults to sftp if omitted)
   email_to:          # required when delivery: email
     - someone@example.com
+  zip: true          # or false to deliver the plain file uncompressed (defaults to true)
 ```
 
 ## Run
@@ -81,9 +82,11 @@ python3 export.py --name my_export --local-only   # write locally only, skip del
 
 > On some systems (especially macOS), the `python` command may not be available by default. Use `python3` instead.
 
-Each run: executes the query -> writes CSV/Excel to `LOCAL_OUTPUT_DIR` -> delivers it via
+Each run: executes the query -> writes CSV/Excel to `LOCAL_OUTPUT_DIR` -> zips that file
+(`<remote_filename>.zip`), unless the export sets `zip: false` -> delivers the result via
 SFTP (upload to `SFTP_REMOTE_DIR`) or email (attachment via SMTP), per that export's
-`delivery` setting -> logs progress -> records the outcome.
+`delivery` setting -> logs progress -> records the outcome. `--local-only` skips the zip
+step too, writing just the plain CSV/Excel file.
 
 ## Tracking & logging
 
