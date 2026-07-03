@@ -1,0 +1,81 @@
+# Define one entry per export. Run any of them on demand with:
+#   python export.py --name <n>
+#   python export.py --all
+#   python export.py --list
+#
+# format: "csv" or "excel"
+# remote_filename supports a {date} placeholder -> current date (YYYY-MM-DD)
+#
+# These queries target the financial demo dataset in scripts/init_db.sql
+# (clients, accounts, transactions, gl_entries, positions, risk_metrics,
+# instruments, fx_rates). All four were run against a live copy of that
+# dataset and confirmed to return real rows.
+
+exports:
+  - name: daily_transactions
+    description: "Trades executed today, one row per transaction, delivered to SFTP."
+    query: >
+      SELECT
+          t.txn_reference,
+          t.trade_date,
+          c.company_name AS client_name,
+          t.direction,
+          t.quantity,
+          t.gross_amount,
+          t.currency,
+          t.status
+      FROM transactions t
+      JOIN accounts a ON a.id = t.account_id
+      JOIN clients  c ON c.id = a.client_id
+      WHERE t.trade_date >= CURRENT_DATE - INTERVAL '1 day'
+      ORDER BY t.trade_date DESC
+    format: csv
+    remote_filename: "daily_transactions_{date}.csv"
+
+  - name: weekly_revenue_report
+    description: "Weekly revenue by GL line (accounts starting '4'), Excel, delivered to SFTP."
+    query: >
+      SELECT
+          gl_description AS revenue_line,
+          COUNT(*)          AS entries,
+          SUM(credit_amount) AS revenue
+      FROM gl_entries
+      WHERE posting_date >= CURRENT_DATE - INTERVAL '7 days'
+        AND gl_account LIKE '4%'
+      GROUP BY gl_description
+      ORDER BY revenue DESC
+    format: excel
+    remote_filename: "weekly_revenue_report_{date}.xlsx"
+
+  - name: top_tier_client_feed
+    description: "Active clients with the highest total account balance, delivered to partner SFTP."
+    query: >
+      SELECT
+          c.client_code,
+          c.company_name,
+          c.contact_person,
+          c.contact_email,
+          c.country,
+          SUM(a.balance) AS total_balance
+      FROM clients c
+      JOIN accounts a ON a.client_id = c.id
+      WHERE c.status = 'active'
+      GROUP BY c.client_code, c.company_name, c.contact_person, c.contact_email, c.country
+      ORDER BY total_balance DESC
+    format: csv
+    remote_filename: "top_tier_client_feed_{date}.csv"
+
+  - name: clients_csv
+    description: "Full client list, delivered to SFTP."
+    query: >
+      SELECT
+          client_code,
+          company_name,
+          country,
+          industry,
+          status,
+          onboarded_date AS created_at
+      FROM clients
+      ORDER BY onboarded_date DESC
+    format: csv
+    remote_filename: "clients_{date}.csv"

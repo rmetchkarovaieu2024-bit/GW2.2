@@ -1,0 +1,49 @@
+version: "3.9"
+
+# Same example Postgres DB name/user/password as the original GW repo, but
+# published on host port 5433 (not 5432) so it doesn't collide with a native
+# or other local Postgres instance you might already have running (e.g. one
+# backing a separate GW checkout). DATABASE_URL in .env.example points at 5433.
+#
+# Usage:
+#   docker compose up -d
+#   docker compose down -v     # stop and wipe data
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: export-lite-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: export_db
+      POSTGRES_USER: export_user
+      POSTGRES_PASSWORD: export_pass
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init_db.sql:/docker-entrypoint-initdb.d/init_db.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U export_user -d export_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # Local test SFTP server so `python3 export.py` can be exercised end-to-end
+  # (including delivery) without a real SFTP target. Uploaded files land in
+  # /home/sftp_user/incoming inside the container (not bind-mounted: atmoz/sftp
+  # needs to own+chown that directory itself, which it can't do to a
+  # host-mounted volume, so it's left as container-local, ephemeral storage —
+  # inspect it with `docker exec export-lite-sftp ls /home/sftp_user/incoming`).
+  sftp:
+    image: atmoz/sftp:latest
+    container_name: export-lite-sftp
+    restart: unless-stopped
+    ports:
+      - "2222:22"
+    command: sftp_user:sftp_pass:1001:100:incoming
+
+volumes:
+  postgres_data:
+    driver: local

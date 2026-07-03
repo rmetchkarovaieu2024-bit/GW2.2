@@ -1,0 +1,1001 @@
+client_code,company_name,country,industry,status,created_at
+CLT-0340,Sterling Finance 340,SG,Banking,active,2026-07-02
+CLT-0955,Vega Finance 955,SG,Private Equity,active,2026-06-30
+CLT-0939,Horizon Trust 939,LU,Fintech,active,2026-06-27
+CLT-0562,Neptune Securities 562,ES,Asset Management,active,2026-06-23
+CLT-0587,Helios Investments 587,DE,Corporate Finance,active,2026-06-15
+CLT-0351,Pegasus Asset Management 351,BE,Insurance,active,2026-06-13
+CLT-0398,Pinnacle Wealth 398,IT,Investment Banking,active,2026-06-13
+CLT-0248,Pinnacle Wealth 248,IT,Investment Banking,active,2026-06-12
+CLT-0460,Sterling Finance 460,SG,Banking,active,2026-06-11
+CLT-0405,Aurora Capital 405,US,Private Equity,active,2026-06-10
+CLT-0293,Jupiter Wealth 293,IT,Hedge Fund,active,2026-06-05
+CLT-0035,Apex Holdings 35,CH,Private Equity,active,2026-06-04
+CLT-0058,Centaurus Pension 58,AU,Investment Banking,active,2026-06-01
+CLT-0029,Rigel Global 29,CA,Fintech,active,2026-05-31
+CLT-0526,Quantum Partners 526,GB,Retail Banking,active,2026-05-29
+CLT-0804,Saturn Trust 804,LU,Pension Fund,active,2026-05-21
+CLT-0882,Cascade Insurance 882,JP,Asset Management,active,2026-05-19
+CLT-0919,Phoenix Group 919,NL,Fintech,active,2026-05-17
+CLT-0116,Sirius Bank 116,HK,Retail Banking,active,2026-05-12
+CLT-0465,Aurora Capital 465,US,Private Equity,active,2026-05-10
+CLT-0598,Centaurus Pension 598,AU,Investment Banking,active,2026-05-08
+CLT-0672,Cascade Insurance 672,JP,Asset Management,active,2026-05-04
+CLT-0704,Polaris Global 704,CA,Pension Fund,active,2026-04-29
+CLT-0972,Cascade Insurance 972,JP,Asset Management,active,2026-04-21
+CLT-0290,Olympus Holdings 290,CH,Banking,active,2026-04-17
+CLT-0744,Saturn Trust 744,LU,Pension Fund,active,2026-04-15
+CLT-0707,Helios Investments 707,DE,Corporate Finance,active,2026-04-15
+CLT-0795,Aurora Capital 795,US,Private Equity,active,2026-04-14
+CLT-0549,Horizon Trust 549,LU,Fintech,active,2026-04-08
+CLT-0902,Atlas Investments 902,DE,Asset Management,active,2026-04-07
+CLT-0192,Cascade Insurance 192,JP,Asset Management,active,2026-04-03
+CLT-0250,Sterling Finance 250,SG,Banking,under_review,2026-03-21
+CLT-0067,Summit Securities 67,ES,Corporate Finance,active,2026-03-12
+CLT-0354,Saturn Trust 354,LU,Pension Fund,active,2026-03-08
+CLT-0709,Phoenix Group 709,NL,Fintech,active,2026-03-04
+CLT-0997,Summit Securities 997,ES,Corporate Finance,active,2026-03-02
+CLT-0388,Centaurus Pension 388,AU,Investment Banking,active,2026-02-27
+CLT-0875,Apex Holdings 875,CH,Private Equity,active,2026-02-26
+CLT-0652,Neptune Securities 652,ES,Asset Management,active,2026-02-24
+CLT-0281,Meridian Bank 281,HK,Insurance,active,2026-02-24
+CLT-0678,Titan Fund 678,FR,Investment Banking,active,2026-02-24
+CLT-0080,Olympus Holdings 80,CH,Banking,active,2026-02-18
+CLT-0928,Centaurus Pension 928,AU,Investment Banking,active,2026-02-17
+CLT-0621,Pegasus Asset Management 621,BE,Insurance,active,2026-02-13
+CLT-0577,Summit Securities 577,ES,Corporate Finance,active,2026-02-10
+CLT-0966,Vertex Asset Management 966,BE,Retail Banking,active,2026-02-09
+CLT-0300,Acme Capital 300,US,Banking,inactive,2026-02-09
+CLT-0141,Pegasus Asset Management 141,BE,Insurance,active,2026-02-08
+CLT-0879,Horizon Trust 879,LU,Fintech,active,2026-02-07
+CLT-0761,Meridian Bank 761,HK,Insurance,active,2026-02-01
+CLT-0374,Polaris Global 374,CA,Pension Fund,active,2026-01-22
+CLT-0358,Centaurus Pension 358,AU,Investment Banking,active,2026-01-15
+CLT-0123,Orion Fund 123,FR,Hedge Fund,active,2026-01-15
+CLT-0677,Helios Investments 677,DE,Corporate Finance,active,2026-01-14
+CLT-0304,Nexus Group 304,NL,Pension Fund,active,2026-01-14
+CLT-0307,Summit Securities 307,ES,Corporate Finance,active,2026-01-07
+CLT-0877,Summit Securities 877,ES,Corporate Finance,active,2026-01-06
+CLT-0381,Pegasus Asset Management 381,BE,Insurance,active,2026-01-05
+CLT-0106,Quantum Partners 106,GB,Retail Banking,active,2026-01-04
+CLT-0184,Nexus Group 184,NL,Pension Fund,active,2025-12-26
+CLT-0889,Phoenix Group 889,NL,Fintech,active,2025-12-20
+CLT-0624,Saturn Trust 624,LU,Pension Fund,active,2025-12-18
+CLT-0401,Meridian Bank 401,HK,Insurance,active,2025-12-10
+CLT-0692,Atlas Investments 692,DE,Asset Management,active,2025-11-30
+CLT-0714,Saturn Trust 714,LU,Pension Fund,active,2025-11-25
+CLT-0172,Neptune Securities 172,ES,Asset Management,active,2025-11-24
+CLT-0949,Phoenix Group 949,NL,Fintech,active,2025-11-23
+CLT-0981,Pegasus Asset Management 981,BE,Insurance,active,2025-11-23
+CLT-0042,Cascade Insurance 42,JP,Asset Management,active,2025-11-22
+CLT-0480,Acme Capital 480,US,Banking,inactive,2025-11-22
+CLT-0537,Andromeda Insurance 537,JP,Corporate Finance,active,2025-11-21
+CLT-0534,Saturn Trust 534,LU,Pension Fund,active,2025-11-20
+CLT-0427,Summit Securities 427,ES,Corporate Finance,active,2025-11-18
+CLT-0261,Pegasus Asset Management 261,BE,Insurance,active,2025-11-16
+CLT-0209,Rigel Global 209,CA,Fintech,active,2025-11-14
+CLT-0693,Orion Fund 693,FR,Hedge Fund,active,2025-11-13
+CLT-0149,Rigel Global 149,CA,Fintech,active,2025-11-13
+CLT-0064,Nexus Group 64,NL,Pension Fund,active,2025-11-13
+CLT-0118,Centaurus Pension 118,AU,Investment Banking,active,2025-11-11
+CLT-0280,Sterling Finance 280,SG,Banking,active,2025-11-02
+CLT-0733,Solaris Pension 733,AU,Hedge Fund,active,2025-11-01
+CLT-0139,Phoenix Group 139,NL,Fintech,active,2025-10-25
+CLT-0345,Aurora Capital 345,US,Private Equity,active,2025-10-23
+CLT-0735,Aurora Capital 735,US,Private Equity,active,2025-10-23
+CLT-0959,Rigel Global 959,CA,Fintech,active,2025-10-21
+CLT-0909,Horizon Trust 909,LU,Fintech,active,2025-10-16
+CLT-0555,Aurora Capital 555,US,Private Equity,active,2025-10-16
+CLT-0011,Meridian Bank 11,HK,Insurance,active,2025-10-15
+CLT-0403,Solaris Pension 403,AU,Hedge Fund,active,2025-10-14
+CLT-0057,Andromeda Insurance 57,JP,Corporate Finance,active,2025-10-07
+CLT-0656,Sirius Bank 656,HK,Retail Banking,active,2025-10-03
+CLT-0853,Solaris Pension 853,AU,Hedge Fund,active,2025-10-01
+CLT-0683,Jupiter Wealth 683,IT,Hedge Fund,active,2025-09-29
+CLT-0891,Pegasus Asset Management 891,BE,Insurance,active,2025-09-26
+CLT-0365,Apex Holdings 365,CH,Private Equity,active,2025-09-16
+CLT-0334,Nexus Group 334,NL,Pension Fund,active,2025-09-14
+CLT-0277,Summit Securities 277,ES,Corporate Finance,active,2025-09-08
+CLT-0481,Zenith Partners 481,GB,Insurance,active,2025-08-30
+CLT-0287,Helios Investments 287,DE,Corporate Finance,active,2025-08-28
+CLT-0674,Polaris Global 674,CA,Pension Fund,active,2025-08-28
+CLT-0871,Zenith Partners 871,GB,Insurance,active,2025-08-23
+CLT-0222,Cascade Insurance 222,JP,Asset Management,active,2025-08-22
+CLT-0237,Andromeda Insurance 237,JP,Corporate Finance,active,2025-08-11
+CLT-0276,Vertex Asset Management 276,BE,Retail Banking,active,2025-08-03
+CLT-0452,Atlas Investments 452,DE,Asset Management,active,2025-08-02
+CLT-0992,Atlas Investments 992,DE,Asset Management,active,2025-07-31
+CLT-0314,Polaris Global 314,CA,Pension Fund,active,2025-07-21
+CLT-0720,Acme Capital 720,US,Banking,inactive,2025-07-20
+CLT-0548,Pinnacle Wealth 548,IT,Investment Banking,active,2025-07-19
+CLT-0929,Rigel Global 929,CA,Fintech,active,2025-07-14
+CLT-0989,Rigel Global 989,CA,Fintech,active,2025-07-02
+CLT-0826,Quantum Partners 826,GB,Retail Banking,active,2025-07-01
+CLT-0376,Quantum Partners 376,GB,Retail Banking,active,2025-07-01
+CLT-0267,Andromeda Insurance 267,JP,Corporate Finance,active,2025-06-27
+CLT-0558,Titan Fund 558,FR,Investment Banking,active,2025-06-23
+CLT-0881,Meridian Bank 881,HK,Insurance,active,2025-06-12
+CLT-0012,Cascade Insurance 12,JP,Asset Management,active,2025-06-09
+CLT-0019,Phoenix Group 19,NL,Fintech,active,2025-06-03
+CLT-0610,Sterling Finance 610,SG,Banking,active,2025-05-31
+CLT-0533,Jupiter Wealth 533,IT,Hedge Fund,active,2025-05-28
+CLT-0477,Andromeda Insurance 477,JP,Corporate Finance,active,2025-05-26
+CLT-0331,Zenith Partners 331,GB,Insurance,active,2025-05-22
+CLT-0736,Quantum Partners 736,GB,Retail Banking,active,2025-05-21
+CLT-0753,Orion Fund 753,FR,Hedge Fund,active,2025-05-20
+CLT-0618,Titan Fund 618,FR,Investment Banking,active,2025-05-19
+CLT-0567,Andromeda Insurance 567,JP,Corporate Finance,active,2025-05-15
+CLT-0581,Meridian Bank 581,HK,Insurance,active,2025-05-13
+CLT-0663,Orion Fund 663,FR,Hedge Fund,active,2025-05-11
+CLT-0918,Titan Fund 918,FR,Investment Banking,active,2025-05-05
+CLT-0910,Sterling Finance 910,SG,Banking,active,2025-04-24
+CLT-0994,Nexus Group 994,NL,Pension Fund,active,2025-04-21
+CLT-0450,Acme Capital 450,US,Banking,inactive,2025-04-15
+CLT-0258,Titan Fund 258,FR,Investment Banking,active,2025-03-30
+CLT-0194,Polaris Global 194,CA,Pension Fund,active,2025-03-29
+CLT-0175,Vega Finance 175,SG,Private Equity,active,2025-03-21
+CLT-0461,Meridian Bank 461,HK,Insurance,active,2025-03-15
+CLT-0510,Acme Capital 510,US,Banking,inactive,2025-03-10
+CLT-0634,Nexus Group 634,NL,Pension Fund,active,2025-03-09
+CLT-0074,Polaris Global 74,CA,Pension Fund,active,2025-03-06
+CLT-0068,Pinnacle Wealth 68,IT,Investment Banking,active,2025-03-02
+CLT-0599,Rigel Global 599,CA,Fintech,active,2025-02-23
+CLT-0969,Horizon Trust 969,LU,Fintech,active,2025-02-19
+CLT-0488,Pinnacle Wealth 488,IT,Investment Banking,active,2025-02-19
+CLT-0062,Atlas Investments 62,DE,Asset Management,active,2025-02-18
+CLT-0130,Sterling Finance 130,SG,Banking,active,2025-02-16
+CLT-0890,Olympus Holdings 890,CH,Banking,active,2025-02-14
+CLT-0371,Meridian Bank 371,HK,Insurance,active,2025-02-12
+CLT-0956,Sirius Bank 956,HK,Retail Banking,active,2025-02-09
+CLT-0725,Apex Holdings 725,CH,Private Equity,active,2025-02-07
+CLT-0903,Orion Fund 903,FR,Hedge Fund,active,2025-02-06
+CLT-0651,Pegasus Asset Management 651,BE,Insurance,active,2025-02-05
+CLT-0696,Vertex Asset Management 696,BE,Retail Banking,active,2025-01-29
+CLT-0974,Polaris Global 974,CA,Pension Fund,active,2025-01-28
+CLT-0660,Acme Capital 660,US,Banking,inactive,2025-01-26
+CLT-0127,Summit Securities 127,ES,Corporate Finance,active,2025-01-22
+CLT-0776,Sirius Bank 776,HK,Retail Banking,active,2025-01-18
+CLT-0550,Sterling Finance 550,SG,Banking,under_review,2025-01-11
+CLT-0536,Sirius Bank 536,HK,Retail Banking,active,2025-01-08
+CLT-0888,Titan Fund 888,FR,Investment Banking,active,2025-01-05
+CLT-0801,Pegasus Asset Management 801,BE,Insurance,active,2024-12-24
+CLT-0597,Andromeda Insurance 597,JP,Corporate Finance,active,2024-12-19
+CLT-0691,Zenith Partners 691,GB,Insurance,active,2024-12-17
+CLT-0002,Atlas Investments 2,DE,Asset Management,active,2024-12-15
+CLT-0404,Polaris Global 404,CA,Pension Fund,active,2024-12-15
+CLT-0178,Centaurus Pension 178,AU,Investment Banking,active,2024-12-03
+CLT-0050,Olympus Holdings 50,CH,Banking,under_review,2024-11-30
+CLT-0255,Aurora Capital 255,US,Private Equity,active,2024-11-22
+CLT-0503,Jupiter Wealth 503,IT,Hedge Fund,active,2024-11-18
+CLT-0561,Pegasus Asset Management 561,BE,Insurance,active,2024-11-17
+CLT-0787,Summit Securities 787,ES,Corporate Finance,active,2024-11-16
+CLT-0931,Zenith Partners 931,GB,Insurance,active,2024-11-12
+CLT-0014,Polaris Global 14,CA,Pension Fund,active,2024-11-08
+CLT-0191,Meridian Bank 191,HK,Insurance,active,2024-11-03
+CLT-0911,Meridian Bank 911,HK,Insurance,active,2024-11-02
+CLT-0375,Aurora Capital 375,US,Private Equity,active,2024-11-01
+CLT-0632,Atlas Investments 632,DE,Asset Management,active,2024-10-22
+CLT-0791,Meridian Bank 791,HK,Insurance,active,2024-10-22
+CLT-0463,Solaris Pension 463,AU,Hedge Fund,active,2024-10-18
+CLT-0047,Helios Investments 47,DE,Corporate Finance,active,2024-10-16
+CLT-0136,Quantum Partners 136,GB,Retail Banking,active,2024-10-15
+CLT-0947,Helios Investments 947,DE,Corporate Finance,active,2024-10-14
+CLT-0346,Quantum Partners 346,GB,Retail Banking,active,2024-10-14
+CLT-0041,Meridian Bank 41,HK,Insurance,active,2024-10-13
+CLT-0264,Saturn Trust 264,LU,Pension Fund,active,2024-10-09
+CLT-0616,Quantum Partners 616,GB,Retail Banking,active,2024-10-09
+CLT-0107,Helios Investments 107,DE,Corporate Finance,active,2024-10-07
+CLT-0182,Atlas Investments 182,DE,Asset Management,active,2024-10-01
+CLT-0385,Vega Finance 385,SG,Private Equity,active,2024-09-29
+CLT-0758,Pinnacle Wealth 758,IT,Investment Banking,active,2024-09-21
+CLT-0438,Titan Fund 438,FR,Investment Banking,active,2024-09-15
+CLT-0155,Apex Holdings 155,CH,Private Equity,active,2024-09-11
+CLT-0088,Centaurus Pension 88,AU,Investment Banking,active,2024-09-08
+CLT-0183,Orion Fund 183,FR,Hedge Fund,active,2024-09-06
+CLT-0590,Olympus Holdings 590,CH,Banking,active,2024-09-02
+CLT-0368,Pinnacle Wealth 368,IT,Investment Banking,active,2024-08-26
+CLT-0330,Acme Capital 330,US,Banking,inactive,2024-08-17
+CLT-0502,Neptune Securities 502,ES,Asset Management,active,2024-08-12
+CLT-0802,Neptune Securities 802,ES,Asset Management,active,2024-08-09
+CLT-0566,Sirius Bank 566,HK,Retail Banking,active,2024-07-21
+CLT-0147,Andromeda Insurance 147,JP,Corporate Finance,active,2024-07-13
+CLT-0272,Atlas Investments 272,DE,Asset Management,active,2024-07-10
+CLT-0532,Neptune Securities 532,ES,Asset Management,active,2024-06-30
+CLT-0963,Orion Fund 963,FR,Hedge Fund,active,2024-06-30
+CLT-0054,Saturn Trust 54,LU,Pension Fund,active,2024-06-20
+CLT-0169,Phoenix Group 169,NL,Fintech,active,2024-06-18
+CLT-0364,Nexus Group 364,NL,Pension Fund,active,2024-06-18
+CLT-0313,Solaris Pension 313,AU,Hedge Fund,active,2024-06-16
+CLT-0993,Orion Fund 993,FR,Hedge Fund,active,2024-06-16
+CLT-0329,Rigel Global 329,CA,Fintech,active,2024-06-15
+CLT-0551,Meridian Bank 551,HK,Insurance,active,2024-06-12
+CLT-0699,Horizon Trust 699,LU,Fintech,active,2024-06-12
+CLT-0623,Jupiter Wealth 623,IT,Hedge Fund,active,2024-06-10
+CLT-0556,Quantum Partners 556,GB,Retail Banking,active,2024-06-08
+CLT-0822,Cascade Insurance 822,JP,Asset Management,active,2024-06-04
+CLT-0771,Pegasus Asset Management 771,BE,Insurance,active,2024-06-01
+CLT-0380,Olympus Holdings 380,CH,Banking,active,2024-05-27
+CLT-0815,Apex Holdings 815,CH,Private Equity,active,2024-05-17
+CLT-0060,Acme Capital 60,US,Banking,inactive,2024-05-13
+CLT-0033,Orion Fund 33,FR,Hedge Fund,active,2024-05-12
+CLT-0487,Summit Securities 487,ES,Corporate Finance,active,2024-05-10
+CLT-0916,Quantum Partners 916,GB,Retail Banking,active,2024-05-07
+CLT-0053,Jupiter Wealth 53,IT,Hedge Fund,active,2024-05-05
+CLT-0594,Saturn Trust 594,LU,Pension Fund,active,2024-05-03
+CLT-0425,Apex Holdings 425,CH,Private Equity,active,2024-04-24
+CLT-0825,Aurora Capital 825,US,Private Equity,active,2024-04-21
+CLT-0738,Titan Fund 738,FR,Investment Banking,active,2024-04-20
+CLT-0091,Zenith Partners 91,GB,Insurance,active,2024-04-17
+CLT-0847,Summit Securities 847,ES,Corporate Finance,active,2024-04-16
+CLT-0044,Polaris Global 44,CA,Pension Fund,active,2024-04-14
+CLT-0873,Orion Fund 873,FR,Hedge Fund,active,2024-04-04
+CLT-0957,Andromeda Insurance 957,JP,Corporate Finance,active,2024-04-04
+CLT-0793,Solaris Pension 793,AU,Hedge Fund,active,2024-04-01
+CLT-0647,Helios Investments 647,DE,Corporate Finance,active,2024-04-01
+CLT-0299,Rigel Global 299,CA,Fintech,active,2024-03-28
+CLT-0605,Apex Holdings 605,CH,Private Equity,active,2024-03-27
+CLT-0563,Jupiter Wealth 563,IT,Hedge Fund,active,2024-03-24
+CLT-0627,Andromeda Insurance 627,JP,Corporate Finance,active,2024-03-23
+CLT-0574,Nexus Group 574,NL,Pension Fund,active,2024-03-22
+CLT-0914,Polaris Global 914,CA,Pension Fund,active,2024-03-22
+CLT-0572,Atlas Investments 572,DE,Asset Management,active,2024-03-17
+CLT-0973,Solaris Pension 973,AU,Hedge Fund,active,2024-03-05
+CLT-0792,Cascade Insurance 792,JP,Asset Management,active,2024-02-24
+CLT-0962,Atlas Investments 962,DE,Asset Management,active,2024-02-22
+CLT-0119,Rigel Global 119,CA,Fintech,active,2024-02-12
+CLT-0479,Rigel Global 479,CA,Fintech,active,2024-02-08
+CLT-0703,Solaris Pension 703,AU,Hedge Fund,active,2024-02-06
+CLT-0131,Meridian Bank 131,HK,Insurance,active,2024-02-03
+CLT-0497,Helios Investments 497,DE,Corporate Finance,active,2024-01-29
+CLT-0857,Helios Investments 857,DE,Corporate Finance,active,2024-01-23
+CLT-0996,Vertex Asset Management 996,BE,Retail Banking,active,2024-01-18
+CLT-0283,Solaris Pension 283,AU,Hedge Fund,active,2023-12-29
+CLT-0210,Acme Capital 210,US,Banking,inactive,2023-12-24
+CLT-0207,Andromeda Insurance 207,JP,Corporate Finance,active,2023-12-22
+CLT-0001,Zenith Partners 1,GB,Insurance,active,2023-12-20
+CLT-0383,Jupiter Wealth 383,IT,Hedge Fund,active,2023-12-15
+CLT-0387,Andromeda Insurance 387,JP,Corporate Finance,active,2023-12-12
+CLT-0453,Orion Fund 453,FR,Hedge Fund,active,2023-12-10
+CLT-0483,Orion Fund 483,FR,Hedge Fund,active,2023-12-06
+CLT-0179,Rigel Global 179,CA,Fintech,active,2023-12-05
+CLT-0752,Atlas Investments 752,DE,Asset Management,active,2023-11-29
+CLT-0410,Olympus Holdings 410,CH,Banking,active,2023-11-26
+CLT-0317,Helios Investments 317,DE,Corporate Finance,active,2023-11-23
+CLT-0701,Meridian Bank 701,HK,Insurance,active,2023-11-19
+CLT-0644,Polaris Global 644,CA,Pension Fund,active,2023-11-16
+CLT-0713,Jupiter Wealth 713,IT,Hedge Fund,active,2023-11-16
+CLT-0077,Helios Investments 77,DE,Corporate Finance,active,2023-11-11
+CLT-0202,Neptune Securities 202,ES,Asset Management,active,2023-11-06
+CLT-0539,Rigel Global 539,CA,Fintech,active,2023-11-06
+CLT-0883,Solaris Pension 883,AU,Hedge Fund,active,2023-10-30
+CLT-0897,Andromeda Insurance 897,JP,Corporate Finance,active,2023-10-27
+CLT-0987,Andromeda Insurance 987,JP,Corporate Finance,active,2023-10-06
+CLT-0961,Zenith Partners 961,GB,Insurance,active,2023-10-05
+CLT-0246,Vertex Asset Management 246,BE,Retail Banking,active,2023-10-02
+CLT-0739,Phoenix Group 739,NL,Fintech,active,2023-10-02
+CLT-0760,Sterling Finance 760,SG,Banking,active,2023-09-21
+CLT-0564,Saturn Trust 564,LU,Pension Fund,active,2023-09-08
+CLT-0396,Vertex Asset Management 396,BE,Retail Banking,active,2023-09-03
+CLT-0731,Meridian Bank 731,HK,Insurance,active,2023-09-01
+CLT-0117,Andromeda Insurance 117,JP,Corporate Finance,active,2023-08-31
+CLT-0181,Zenith Partners 181,GB,Insurance,active,2023-08-29
+CLT-0045,Aurora Capital 45,US,Private Equity,active,2023-08-28
+CLT-0416,Sirius Bank 416,HK,Retail Banking,active,2023-08-28
+CLT-0279,Horizon Trust 279,LU,Fintech,active,2023-08-24
+CLT-0352,Neptune Securities 352,ES,Asset Management,active,2023-08-19
+CLT-0254,Polaris Global 254,CA,Pension Fund,active,2023-08-16
+CLT-0143,Jupiter Wealth 143,IT,Hedge Fund,active,2023-08-16
+CLT-0552,Cascade Insurance 552,JP,Asset Management,active,2023-08-15
+CLT-0097,Summit Securities 97,ES,Corporate Finance,active,2023-08-05
+CLT-0274,Nexus Group 274,NL,Pension Fund,active,2023-08-02
+CLT-0026,Sirius Bank 26,HK,Retail Banking,active,2023-08-01
+CLT-0519,Horizon Trust 519,LU,Fintech,active,2023-07-31
+CLT-0927,Andromeda Insurance 927,JP,Corporate Finance,active,2023-07-31
+CLT-0596,Sirius Bank 596,HK,Retail Banking,active,2023-07-25
+CLT-0309,Horizon Trust 309,LU,Fintech,active,2023-07-23
+CLT-0339,Horizon Trust 339,LU,Fintech,active,2023-07-16
+CLT-0748,Centaurus Pension 748,AU,Investment Banking,active,2023-07-13
+CLT-0367,Summit Securities 367,ES,Corporate Finance,active,2023-07-08
+CLT-0347,Helios Investments 347,DE,Corporate Finance,active,2023-07-08
+CLT-0775,Vega Finance 775,SG,Private Equity,active,2023-07-04
+CLT-0680,Olympus Holdings 680,CH,Banking,active,2023-07-02
+CLT-0071,Meridian Bank 71,HK,Insurance,active,2023-06-26
+CLT-0084,Saturn Trust 84,LU,Pension Fund,active,2023-06-20
+CLT-0224,Polaris Global 224,CA,Pension Fund,active,2023-06-19
+CLT-0942,Cascade Insurance 942,JP,Asset Management,active,2023-06-19
+CLT-0153,Orion Fund 153,FR,Hedge Fund,active,2023-06-14
+CLT-0712,Neptune Securities 712,ES,Asset Management,active,2023-05-27
+CLT-0208,Centaurus Pension 208,AU,Investment Banking,active,2023-05-22
+CLT-0167,Helios Investments 167,DE,Corporate Finance,active,2023-05-17
+CLT-0743,Jupiter Wealth 743,IT,Hedge Fund,active,2023-05-17
+CLT-0252,Cascade Insurance 252,JP,Asset Management,active,2023-05-17
+CLT-0620,Olympus Holdings 620,CH,Banking,active,2023-05-16
+CLT-0803,Jupiter Wealth 803,IT,Hedge Fund,active,2023-05-11
+CLT-0737,Helios Investments 737,DE,Corporate Finance,active,2023-05-03
+CLT-0900,Acme Capital 900,US,Banking,inactive,2023-05-03
+CLT-0471,Pegasus Asset Management 471,BE,Insurance,active,2023-04-22
+CLT-0065,Apex Holdings 65,CH,Private Equity,active,2023-04-21
+CLT-0823,Solaris Pension 823,AU,Hedge Fund,active,2023-04-18
+CLT-0950,Olympus Holdings 950,CH,Banking,under_review,2023-04-16
+CLT-0915,Aurora Capital 915,US,Private Equity,active,2023-04-15
+CLT-0079,Phoenix Group 79,NL,Fintech,active,2023-04-15
+CLT-0648,Titan Fund 648,FR,Investment Banking,active,2023-04-11
+CLT-0926,Sirius Bank 926,HK,Retail Banking,active,2023-04-03
+CLT-0439,Phoenix Group 439,NL,Fintech,active,2023-03-29
+CLT-0682,Neptune Securities 682,ES,Asset Management,active,2023-03-18
+CLT-0144,Saturn Trust 144,LU,Pension Fund,active,2023-03-07
+CLT-0373,Solaris Pension 373,AU,Hedge Fund,active,2023-03-02
+CLT-0953,Jupiter Wealth 953,IT,Hedge Fund,active,2023-02-22
+CLT-0121,Zenith Partners 121,GB,Insurance,active,2023-02-20
+CLT-0412,Neptune Securities 412,ES,Asset Management,active,2023-02-15
+CLT-0665,Apex Holdings 665,CH,Private Equity,active,2023-02-13
+CLT-0766,Quantum Partners 766,GB,Retail Banking,active,2023-02-10
+CLT-0265,Vega Finance 265,SG,Private Equity,active,2023-02-08
+CLT-0103,Solaris Pension 103,AU,Hedge Fund,active,2023-02-06
+CLT-0496,Quantum Partners 496,GB,Retail Banking,active,2023-02-03
+CLT-0240,Acme Capital 240,US,Banking,inactive,2023-02-02
+CLT-0715,Vega Finance 715,SG,Private Equity,active,2023-01-28
+CLT-0759,Horizon Trust 759,LU,Fintech,active,2023-01-26
+CLT-0188,Pinnacle Wealth 188,IT,Investment Banking,active,2023-01-25
+CLT-0509,Rigel Global 509,CA,Fintech,active,2023-01-20
+CLT-0600,Acme Capital 600,US,Banking,inactive,2023-01-16
+CLT-0491,Meridian Bank 491,HK,Insurance,active,2023-01-12
+CLT-0189,Horizon Trust 189,LU,Fintech,active,2023-01-11
+CLT-0205,Vega Finance 205,SG,Private Equity,active,2023-01-11
+CLT-0231,Pegasus Asset Management 231,BE,Insurance,active,2023-01-06
+CLT-0049,Phoenix Group 49,NL,Fintech,active,2023-01-05
+CLT-0236,Sirius Bank 236,HK,Retail Banking,active,2023-01-05
+CLT-0941,Meridian Bank 941,HK,Insurance,active,2022-12-28
+CLT-0310,Sterling Finance 310,SG,Banking,active,2022-12-27
+CLT-0867,Andromeda Insurance 867,JP,Corporate Finance,active,2022-12-22
+CLT-0895,Vega Finance 895,SG,Private Equity,active,2022-12-21
+CLT-0359,Rigel Global 359,CA,Fintech,active,2022-12-19
+CLT-0524,Polaris Global 524,CA,Pension Fund,active,2022-12-19
+CLT-0135,Aurora Capital 135,US,Private Equity,active,2022-12-04
+CLT-0303,Orion Fund 303,FR,Hedge Fund,active,2022-11-29
+CLT-0531,Pegasus Asset Management 531,BE,Insurance,active,2022-11-26
+CLT-0442,Neptune Securities 442,ES,Asset Management,active,2022-11-23
+CLT-0228,Titan Fund 228,FR,Investment Banking,active,2022-11-20
+CLT-0575,Apex Holdings 575,CH,Private Equity,active,2022-11-18
+CLT-0193,Solaris Pension 193,AU,Hedge Fund,active,2022-11-18
+CLT-0946,Quantum Partners 946,GB,Retail Banking,active,2022-11-17
+CLT-0013,Solaris Pension 13,AU,Hedge Fund,active,2022-11-08
+CLT-0154,Nexus Group 154,NL,Pension Fund,active,2022-11-08
+CLT-0845,Apex Holdings 845,CH,Private Equity,active,2022-11-02
+CLT-0784,Nexus Group 784,NL,Pension Fund,active,2022-10-31
+CLT-0583,Solaris Pension 583,AU,Hedge Fund,active,2022-10-29
+CLT-0137,Helios Investments 137,DE,Corporate Finance,active,2022-10-23
+CLT-0805,Vega Finance 805,SG,Private Equity,active,2022-10-23
+CLT-0700,Sterling Finance 700,SG,Banking,under_review,2022-10-15
+CLT-0754,Nexus Group 754,NL,Pension Fund,active,2022-10-09
+CLT-0336,Vertex Asset Management 336,BE,Retail Banking,active,2022-10-08
+CLT-0397,Summit Securities 397,ES,Corporate Finance,active,2022-09-30
+CLT-0253,Solaris Pension 253,AU,Hedge Fund,active,2022-09-26
+CLT-0913,Solaris Pension 913,AU,Hedge Fund,active,2022-09-22
+CLT-0434,Polaris Global 434,CA,Pension Fund,active,2022-09-19
+CLT-0846,Vertex Asset Management 846,BE,Retail Banking,active,2022-09-16
+CLT-0292,Neptune Securities 292,ES,Asset Management,active,2022-09-14
+CLT-0104,Polaris Global 104,CA,Pension Fund,active,2022-09-14
+CLT-0612,Cascade Insurance 612,JP,Asset Management,active,2022-09-13
+CLT-0843,Orion Fund 843,FR,Hedge Fund,active,2022-09-08
+CLT-0765,Aurora Capital 765,US,Private Equity,active,2022-08-15
+CLT-0667,Summit Securities 667,ES,Corporate Finance,active,2022-08-14
+CLT-0799,Phoenix Group 799,NL,Fintech,active,2022-08-14
+CLT-0584,Polaris Global 584,CA,Pension Fund,active,2022-08-13
+CLT-0066,Vertex Asset Management 66,BE,Retail Banking,active,2022-08-13
+CLT-0763,Solaris Pension 763,AU,Hedge Fund,active,2022-08-12
+CLT-0245,Apex Holdings 245,CH,Private Equity,active,2022-08-12
+CLT-0185,Apex Holdings 185,CH,Private Equity,active,2022-07-25
+CLT-0750,Acme Capital 750,US,Banking,inactive,2022-07-25
+CLT-0740,Olympus Holdings 740,CH,Banking,active,2022-07-22
+CLT-0522,Cascade Insurance 522,JP,Asset Management,active,2022-07-20
+CLT-0812,Atlas Investments 812,DE,Asset Management,active,2022-07-17
+CLT-0729,Horizon Trust 729,LU,Fintech,active,2022-07-15
+CLT-0305,Apex Holdings 305,CH,Private Equity,active,2022-07-14
+CLT-0745,Vega Finance 745,SG,Private Equity,active,2022-07-13
+CLT-0206,Sirius Bank 206,HK,Retail Banking,active,2022-07-01
+CLT-0055,Vega Finance 55,SG,Private Equity,active,2022-06-29
+CLT-0263,Jupiter Wealth 263,IT,Hedge Fund,active,2022-06-17
+CLT-0538,Centaurus Pension 538,AU,Investment Banking,active,2022-06-16
+CLT-0905,Apex Holdings 905,CH,Private Equity,active,2022-06-05
+CLT-0818,Pinnacle Wealth 818,IT,Investment Banking,active,2022-05-28
+CLT-0831,Pegasus Asset Management 831,BE,Insurance,active,2022-05-23
+CLT-0009,Horizon Trust 9,LU,Fintech,active,2022-05-17
+CLT-0592,Neptune Securities 592,ES,Asset Management,active,2022-05-11
+CLT-0464,Polaris Global 464,CA,Pension Fund,active,2022-05-08
+CLT-0790,Sterling Finance 790,SG,Banking,active,2022-04-27
+CLT-0908,Pinnacle Wealth 908,IT,Investment Banking,active,2022-04-24
+CLT-0170,Olympus Holdings 170,CH,Banking,active,2022-04-08
+CLT-0852,Cascade Insurance 852,JP,Asset Management,active,2022-04-05
+CLT-0814,Nexus Group 814,NL,Pension Fund,active,2022-03-28
+CLT-0654,Saturn Trust 654,LU,Pension Fund,active,2022-03-24
+CLT-0631,Zenith Partners 631,GB,Insurance,active,2022-03-17
+CLT-0518,Pinnacle Wealth 518,IT,Investment Banking,active,2022-03-15
+CLT-0838,Centaurus Pension 838,AU,Investment Banking,active,2022-03-09
+CLT-0899,Rigel Global 899,CA,Fintech,active,2022-03-04
+CLT-0221,Meridian Bank 221,HK,Insurance,active,2022-02-24
+CLT-0289,Phoenix Group 289,NL,Fintech,active,2022-02-23
+CLT-0493,Solaris Pension 493,AU,Hedge Fund,active,2022-02-19
+CLT-0051,Pegasus Asset Management 51,BE,Insurance,active,2022-02-18
+CLT-0528,Titan Fund 528,FR,Investment Banking,active,2022-02-18
+CLT-0353,Jupiter Wealth 353,IT,Hedge Fund,active,2022-02-17
+CLT-0125,Apex Holdings 125,CH,Private Equity,active,2022-02-14
+CLT-0168,Titan Fund 168,FR,Investment Banking,active,2022-02-14
+CLT-0432,Cascade Insurance 432,JP,Asset Management,active,2022-02-13
+CLT-0544,Nexus Group 544,NL,Pension Fund,active,2022-02-12
+CLT-0030,Acme Capital 30,US,Banking,inactive,2022-02-07
+CLT-0285,Aurora Capital 285,US,Private Equity,active,2022-02-06
+CLT-0321,Pegasus Asset Management 321,BE,Insurance,active,2022-01-28
+CLT-0833,Jupiter Wealth 833,IT,Hedge Fund,active,2022-01-28
+CLT-0501,Pegasus Asset Management 501,BE,Insurance,active,2022-01-24
+CLT-0757,Summit Securities 757,ES,Corporate Finance,active,2022-01-22
+CLT-0161,Meridian Bank 161,HK,Insurance,active,2022-01-21
+CLT-0991,Zenith Partners 991,GB,Insurance,active,2022-01-20
+CLT-0232,Neptune Securities 232,ES,Asset Management,active,2022-01-18
+CLT-0443,Jupiter Wealth 443,IT,Hedge Fund,active,2022-01-15
+CLT-0670,Sterling Finance 670,SG,Banking,active,2022-01-06
+CLT-0024,Saturn Trust 24,LU,Pension Fund,active,2022-01-03
+CLT-0151,Zenith Partners 151,GB,Insurance,active,2022-01-01
+CLT-0864,Saturn Trust 864,LU,Pension Fund,active,2021-12-31
+CLT-0220,Sterling Finance 220,SG,Banking,active,2021-12-30
+CLT-0440,Olympus Holdings 440,CH,Banking,active,2021-12-25
+CLT-0798,Titan Fund 798,FR,Investment Banking,active,2021-12-23
+CLT-0180,Acme Capital 180,US,Banking,inactive,2021-12-22
+CLT-0475,Vega Finance 475,SG,Private Equity,active,2021-12-21
+CLT-0603,Orion Fund 603,FR,Hedge Fund,active,2021-12-14
+CLT-0389,Rigel Global 389,CA,Fintech,active,2021-12-13
+CLT-0560,Olympus Holdings 560,CH,Banking,active,2021-12-13
+CLT-0979,Phoenix Group 979,NL,Fintech,active,2021-12-11
+CLT-0445,Vega Finance 445,SG,Private Equity,active,2021-12-09
+CLT-0386,Sirius Bank 386,HK,Retail Banking,active,2021-12-08
+CLT-0197,Helios Investments 197,DE,Corporate Finance,active,2021-12-02
+CLT-0198,Titan Fund 198,FR,Investment Banking,active,2021-11-28
+CLT-0257,Helios Investments 257,DE,Corporate Finance,active,2021-11-25
+CLT-0830,Olympus Holdings 830,CH,Banking,active,2021-11-24
+CLT-0960,Acme Capital 960,US,Banking,inactive,2021-11-23
+CLT-0218,Pinnacle Wealth 218,IT,Investment Banking,active,2021-11-20
+CLT-0142,Neptune Securities 142,ES,Asset Management,active,2021-11-17
+CLT-0690,Acme Capital 690,US,Banking,inactive,2021-11-15
+CLT-0100,Sterling Finance 100,SG,Banking,under_review,2021-11-10
+CLT-0286,Quantum Partners 286,GB,Retail Banking,active,2021-11-05
+CLT-0821,Meridian Bank 821,HK,Insurance,active,2021-11-04
+CLT-0521,Meridian Bank 521,HK,Insurance,active,2021-10-29
+CLT-0730,Sterling Finance 730,SG,Banking,active,2021-10-28
+CLT-0653,Jupiter Wealth 653,IT,Hedge Fund,active,2021-10-27
+CLT-0173,Jupiter Wealth 173,IT,Hedge Fund,active,2021-10-26
+CLT-0885,Aurora Capital 885,US,Private Equity,active,2021-10-25
+CLT-0017,Helios Investments 17,DE,Corporate Finance,active,2021-10-18
+CLT-0315,Aurora Capital 315,US,Private Equity,active,2021-10-17
+CLT-0859,Phoenix Group 859,NL,Fintech,active,2021-10-16
+CLT-0211,Zenith Partners 211,GB,Insurance,active,2021-10-12
+CLT-0602,Atlas Investments 602,DE,Asset Management,active,2021-10-08
+CLT-0863,Jupiter Wealth 863,IT,Hedge Fund,active,2021-10-05
+CLT-0499,Phoenix Group 499,NL,Fintech,active,2021-10-04
+CLT-0828,Titan Fund 828,FR,Investment Banking,active,2021-09-27
+CLT-0976,Quantum Partners 976,GB,Retail Banking,active,2021-09-26
+CLT-0782,Atlas Investments 782,DE,Asset Management,active,2021-09-22
+CLT-0664,Nexus Group 664,NL,Pension Fund,active,2021-09-19
+CLT-0666,Vertex Asset Management 666,BE,Retail Banking,active,2021-09-19
+CLT-0986,Sirius Bank 986,HK,Retail Banking,active,2021-09-18
+CLT-0230,Olympus Holdings 230,CH,Banking,active,2021-09-17
+CLT-0361,Zenith Partners 361,GB,Insurance,active,2021-09-15
+CLT-0912,Cascade Insurance 912,JP,Asset Management,active,2021-09-13
+CLT-0588,Titan Fund 588,FR,Investment Banking,active,2021-09-02
+CLT-0003,Orion Fund 3,FR,Hedge Fund,active,2021-08-23
+CLT-0335,Apex Holdings 335,CH,Private Equity,active,2021-08-20
+CLT-0724,Nexus Group 724,NL,Pension Fund,active,2021-08-20
+CLT-0860,Olympus Holdings 860,CH,Banking,active,2021-08-20
+CLT-0114,Saturn Trust 114,LU,Pension Fund,active,2021-08-13
+CLT-0507,Andromeda Insurance 507,JP,Corporate Finance,active,2021-08-08
+CLT-0105,Aurora Capital 105,US,Private Equity,active,2021-08-08
+CLT-0836,Sirius Bank 836,HK,Retail Banking,active,2021-08-03
+CLT-0234,Saturn Trust 234,LU,Pension Fund,active,2021-07-31
+CLT-0930,Acme Capital 930,US,Banking,inactive,2021-07-30
+CLT-0635,Apex Holdings 635,CH,Private Equity,active,2021-07-29
+CLT-0937,Summit Securities 937,ES,Corporate Finance,active,2021-07-26
+CLT-0110,Olympus Holdings 110,CH,Banking,active,2021-07-19
+CLT-0087,Andromeda Insurance 87,JP,Corporate Finance,active,2021-07-16
+CLT-0282,Cascade Insurance 282,JP,Asset Management,active,2021-07-08
+CLT-0316,Quantum Partners 316,GB,Retail Banking,active,2021-07-03
+CLT-0607,Summit Securities 607,ES,Corporate Finance,active,2021-06-30
+CLT-0535,Vega Finance 535,SG,Private Equity,active,2021-06-29
+CLT-0356,Sirius Bank 356,HK,Retail Banking,active,2021-06-29
+CLT-0031,Zenith Partners 31,GB,Insurance,active,2021-06-28
+CLT-0018,Titan Fund 18,FR,Investment Banking,active,2021-06-20
+CLT-0702,Cascade Insurance 702,JP,Asset Management,active,2021-06-19
+CLT-0721,Zenith Partners 721,GB,Insurance,active,2021-06-09
+CLT-0219,Horizon Trust 219,LU,Fintech,active,2021-06-09
+CLT-0247,Summit Securities 247,ES,Corporate Finance,active,2021-06-07
+CLT-0472,Neptune Securities 472,ES,Asset Management,active,2021-06-04
+CLT-0698,Pinnacle Wealth 698,IT,Investment Banking,active,2021-05-06
+CLT-0717,Andromeda Insurance 717,JP,Corporate Finance,active,2021-05-06
+CLT-0854,Polaris Global 854,CA,Pension Fund,active,2021-05-03
+CLT-0379,Phoenix Group 379,NL,Fintech,active,2021-05-03
+CLT-0213,Orion Fund 213,FR,Hedge Fund,active,2021-05-01
+CLT-0893,Jupiter Wealth 893,IT,Hedge Fund,active,2021-04-22
+CLT-0924,Saturn Trust 924,LU,Pension Fund,active,2021-04-18
+CLT-0072,Cascade Insurance 72,JP,Asset Management,active,2021-04-16
+CLT-0436,Quantum Partners 436,GB,Retail Banking,active,2021-04-07
+CLT-0393,Orion Fund 393,FR,Hedge Fund,active,2021-04-05
+CLT-0215,Apex Holdings 215,CH,Private Equity,active,2021-04-04
+CLT-0476,Sirius Bank 476,HK,Retail Banking,active,2021-03-30
+CLT-0150,Acme Capital 150,US,Banking,inactive,2021-03-25
+CLT-0967,Summit Securities 967,ES,Corporate Finance,active,2021-03-25
+CLT-0756,Vertex Asset Management 756,BE,Retail Banking,active,2021-03-24
+CLT-0545,Apex Holdings 545,CH,Private Equity,active,2021-03-20
+CLT-0447,Andromeda Insurance 447,JP,Corporate Finance,active,2021-03-17
+CLT-0850,Sterling Finance 850,SG,Banking,under_review,2021-03-07
+CLT-0034,Nexus Group 34,NL,Pension Fund,active,2021-03-06
+CLT-0096,Vertex Asset Management 96,BE,Retail Banking,active,2021-02-23
+CLT-0085,Vega Finance 85,SG,Private Equity,active,2021-02-21
+CLT-0938,Pinnacle Wealth 938,IT,Investment Banking,active,2021-02-11
+CLT-0948,Titan Fund 948,FR,Investment Banking,active,2021-02-10
+CLT-0073,Solaris Pension 73,AU,Hedge Fund,active,2021-02-04
+CLT-0630,Acme Capital 630,US,Banking,inactive,2021-01-24
+CLT-0069,Horizon Trust 69,LU,Fintech,active,2021-01-19
+CLT-0195,Aurora Capital 195,US,Private Equity,active,2021-01-16
+CLT-0542,Atlas Investments 542,DE,Asset Management,active,2021-01-13
+CLT-0270,Acme Capital 270,US,Banking,inactive,2021-01-11
+CLT-0052,Neptune Securities 52,ES,Asset Management,active,2021-01-08
+CLT-0636,Vertex Asset Management 636,BE,Retail Banking,active,2021-01-04
+CLT-0529,Phoenix Group 529,NL,Fintech,active,2021-01-03
+CLT-0146,Sirius Bank 146,HK,Retail Banking,active,2021-01-01
+CLT-0772,Neptune Securities 772,ES,Asset Management,active,2020-12-31
+CLT-0520,Sterling Finance 520,SG,Banking,active,2020-12-29
+CLT-0174,Saturn Trust 174,LU,Pension Fund,active,2020-12-27
+CLT-0985,Vega Finance 985,SG,Private Equity,active,2020-12-27
+CLT-0140,Olympus Holdings 140,CH,Banking,active,2020-12-16
+CLT-0726,Vertex Asset Management 726,BE,Retail Banking,active,2020-12-11
+CLT-0036,Vertex Asset Management 36,BE,Retail Banking,active,2020-12-10
+CLT-0163,Solaris Pension 163,AU,Hedge Fund,active,2020-12-05
+CLT-0762,Cascade Insurance 762,JP,Asset Management,active,2020-11-30
+CLT-0126,Vertex Asset Management 126,BE,Retail Banking,active,2020-11-27
+CLT-0980,Olympus Holdings 980,CH,Banking,active,2020-11-26
+CLT-0921,Pegasus Asset Management 921,BE,Insurance,active,2020-11-24
+CLT-0571,Zenith Partners 571,GB,Insurance,active,2020-11-21
+CLT-0124,Nexus Group 124,NL,Pension Fund,active,2020-11-19
+CLT-0455,Apex Holdings 455,CH,Private Equity,active,2020-11-17
+CLT-0856,Quantum Partners 856,GB,Retail Banking,active,2020-11-17
+CLT-0090,Acme Capital 90,US,Banking,inactive,2020-11-15
+CLT-0817,Summit Securities 817,ES,Corporate Finance,active,2020-11-15
+CLT-0848,Pinnacle Wealth 848,IT,Investment Banking,active,2020-11-14
+CLT-0032,Atlas Investments 32,DE,Asset Management,active,2020-11-07
+CLT-0040,Sterling Finance 40,SG,Banking,active,2020-11-04
+CLT-0128,Pinnacle Wealth 128,IT,Investment Banking,active,2020-11-02
+CLT-0964,Nexus Group 964,NL,Pension Fund,active,2020-10-30
+CLT-0370,Sterling Finance 370,SG,Banking,active,2020-10-27
+CLT-0266,Sirius Bank 266,HK,Retail Banking,active,2020-10-26
+CLT-0214,Nexus Group 214,NL,Pension Fund,active,2020-10-25
+CLT-0160,Sterling Finance 160,SG,Banking,active,2020-10-25
+CLT-0681,Pegasus Asset Management 681,BE,Insurance,active,2020-10-20
+CLT-0162,Cascade Insurance 162,JP,Asset Management,active,2020-10-17
+CLT-0904,Nexus Group 904,NL,Pension Fund,active,2020-10-15
+CLT-0589,Phoenix Group 589,NL,Fintech,active,2020-10-15
+CLT-0241,Zenith Partners 241,GB,Insurance,active,2020-10-04
+CLT-0835,Vega Finance 835,SG,Private Equity,active,2020-10-02
+CLT-0686,Sirius Bank 686,HK,Retail Banking,active,2020-09-23
+CLT-0755,Apex Holdings 755,CH,Private Equity,active,2020-09-22
+CLT-0233,Jupiter Wealth 233,IT,Hedge Fund,active,2020-09-22
+CLT-0553,Solaris Pension 553,AU,Hedge Fund,active,2020-09-20
+CLT-0099,Horizon Trust 99,LU,Fintech,active,2020-09-19
+CLT-0101,Meridian Bank 101,HK,Insurance,active,2020-09-11
+CLT-0301,Zenith Partners 301,GB,Insurance,active,2020-09-06
+CLT-0485,Apex Holdings 485,CH,Private Equity,active,2020-08-24
+CLT-0063,Orion Fund 63,FR,Hedge Fund,active,2020-08-22
+CLT-0164,Polaris Global 164,CA,Pension Fund,active,2020-08-09
+CLT-0449,Rigel Global 449,CA,Fintech,active,2020-08-08
+CLT-0876,Vertex Asset Management 876,BE,Retail Banking,active,2020-07-29
+CLT-0129,Horizon Trust 129,LU,Fintech,active,2020-07-26
+CLT-0326,Sirius Bank 326,HK,Retail Banking,active,2020-07-25
+CLT-0842,Atlas Investments 842,DE,Asset Management,active,2020-07-23
+CLT-0975,Aurora Capital 975,US,Private Equity,active,2020-07-23
+CLT-0774,Saturn Trust 774,LU,Pension Fund,active,2020-07-22
+CLT-0148,Centaurus Pension 148,AU,Investment Banking,active,2020-07-19
+CLT-0020,Olympus Holdings 20,CH,Banking,active,2020-07-04
+CLT-0813,Orion Fund 813,FR,Hedge Fund,active,2020-06-22
+CLT-0369,Horizon Trust 369,LU,Fintech,active,2020-06-16
+CLT-0355,Vega Finance 355,SG,Private Equity,active,2020-06-13
+CLT-0025,Vega Finance 25,SG,Private Equity,active,2020-06-12
+CLT-0111,Pegasus Asset Management 111,BE,Insurance,active,2020-06-12
+CLT-0378,Titan Fund 378,FR,Investment Banking,active,2020-06-11
+CLT-0004,Nexus Group 4,NL,Pension Fund,active,2020-06-01
+CLT-0920,Olympus Holdings 920,CH,Banking,active,2020-05-23
+CLT-0617,Helios Investments 617,DE,Corporate Finance,active,2020-05-23
+CLT-0810,Acme Capital 810,US,Banking,inactive,2020-05-21
+CLT-0874,Nexus Group 874,NL,Pension Fund,active,2020-05-19
+CLT-0541,Zenith Partners 541,GB,Insurance,active,2020-05-14
+CLT-0489,Horizon Trust 489,LU,Fintech,active,2020-05-13
+CLT-0056,Sirius Bank 56,HK,Retail Banking,active,2020-05-12
+CLT-0824,Polaris Global 824,CA,Pension Fund,active,2020-05-07
+CLT-0827,Helios Investments 827,DE,Corporate Finance,active,2020-05-05
+CLT-0306,Vertex Asset Management 306,BE,Retail Banking,active,2020-04-27
+CLT-0723,Orion Fund 723,FR,Hedge Fund,active,2020-04-25
+CLT-0186,Vertex Asset Management 186,BE,Retail Banking,active,2020-04-24
+CLT-0970,Sterling Finance 970,SG,Banking,active,2020-04-17
+CLT-0132,Cascade Insurance 132,JP,Asset Management,active,2020-04-17
+CLT-0781,Zenith Partners 781,GB,Insurance,active,2020-04-10
+CLT-0419,Rigel Global 419,CA,Fintech,active,2020-04-09
+CLT-0413,Jupiter Wealth 413,IT,Hedge Fund,active,2020-04-06
+CLT-0242,Atlas Investments 242,DE,Asset Management,active,2020-04-01
+CLT-0324,Saturn Trust 324,LU,Pension Fund,active,2020-03-21
+CLT-0582,Cascade Insurance 582,JP,Asset Management,active,2020-03-19
+CLT-0048,Titan Fund 48,FR,Investment Banking,active,2020-03-10
+CLT-0530,Olympus Holdings 530,CH,Banking,active,2020-03-08
+CLT-0424,Nexus Group 424,NL,Pension Fund,active,2020-03-06
+CLT-0516,Vertex Asset Management 516,BE,Retail Banking,active,2020-03-05
+CLT-0494,Polaris Global 494,CA,Pension Fund,active,2020-03-02
+CLT-0643,Solaris Pension 643,AU,Hedge Fund,active,2020-02-27
+CLT-0547,Summit Securities 547,ES,Corporate Finance,active,2020-02-26
+CLT-0515,Apex Holdings 515,CH,Private Equity,active,2020-02-21
+CLT-0407,Helios Investments 407,DE,Corporate Finance,active,2020-02-21
+CLT-0944,Polaris Global 944,CA,Pension Fund,active,2020-02-02
+CLT-0998,Pinnacle Wealth 998,IT,Investment Banking,active,2020-02-01
+CLT-0554,Polaris Global 554,CA,Pension Fund,active,2020-02-01
+CLT-0350,Olympus Holdings 350,CH,Banking,under_review,2020-01-22
+CLT-0171,Pegasus Asset Management 171,BE,Insurance,active,2020-01-20
+CLT-0546,Vertex Asset Management 546,BE,Retail Banking,active,2020-01-20
+CLT-0083,Jupiter Wealth 83,IT,Hedge Fund,active,2020-01-16
+CLT-0422,Atlas Investments 422,DE,Asset Management,active,2020-01-16
+CLT-0797,Helios Investments 797,DE,Corporate Finance,active,2020-01-15
+CLT-0747,Andromeda Insurance 747,JP,Corporate Finance,active,2020-01-03
+CLT-0983,Jupiter Wealth 983,IT,Hedge Fund,active,2020-01-01
+CLT-0415,Vega Finance 415,SG,Private Equity,active,2019-12-26
+CLT-0768,Titan Fund 768,FR,Investment Banking,active,2019-12-25
+CLT-0711,Pegasus Asset Management 711,BE,Insurance,active,2019-12-23
+CLT-0005,Apex Holdings 5,CH,Private Equity,active,2019-12-19
+CLT-0855,Aurora Capital 855,US,Private Equity,active,2019-12-17
+CLT-0122,Atlas Investments 122,DE,Asset Management,active,2019-12-13
+CLT-0260,Olympus Holdings 260,CH,Banking,active,2019-12-10
+CLT-0417,Andromeda Insurance 417,JP,Corporate Finance,active,2019-12-05
+CLT-0076,Quantum Partners 76,GB,Retail Banking,active,2019-12-04
+CLT-0039,Horizon Trust 39,LU,Fintech,active,2019-12-02
+CLT-0342,Cascade Insurance 342,JP,Asset Management,active,2019-12-02
+CLT-0095,Apex Holdings 95,CH,Private Equity,active,2019-12-02
+CLT-0473,Jupiter Wealth 473,IT,Hedge Fund,active,2019-11-30
+CLT-0511,Zenith Partners 511,GB,Insurance,active,2019-11-28
+CLT-0327,Andromeda Insurance 327,JP,Corporate Finance,active,2019-11-26
+CLT-0819,Horizon Trust 819,LU,Fintech,active,2019-11-20
+CLT-0038,Pinnacle Wealth 38,IT,Investment Banking,active,2019-11-13
+CLT-0204,Saturn Trust 204,LU,Pension Fund,active,2019-11-03
+CLT-0421,Zenith Partners 421,GB,Insurance,active,2019-11-02
+CLT-0451,Zenith Partners 451,GB,Insurance,active,2019-10-29
+CLT-0115,Vega Finance 115,SG,Private Equity,active,2019-10-25
+CLT-0337,Summit Securities 337,ES,Corporate Finance,active,2019-10-21
+CLT-0348,Titan Fund 348,FR,Investment Banking,active,2019-10-16
+CLT-0145,Vega Finance 145,SG,Private Equity,active,2019-10-16
+CLT-0007,Summit Securities 7,ES,Corporate Finance,active,2019-10-15
+CLT-0884,Polaris Global 884,CA,Pension Fund,active,2019-10-15
+CLT-0466,Quantum Partners 466,GB,Retail Banking,active,2019-10-15
+CLT-0332,Atlas Investments 332,DE,Asset Management,active,2019-10-15
+CLT-0676,Quantum Partners 676,GB,Retail Banking,active,2019-10-15
+CLT-0742,Neptune Securities 742,ES,Asset Management,active,2019-09-20
+CLT-0645,Aurora Capital 645,US,Private Equity,active,2019-09-17
+CLT-0907,Summit Securities 907,ES,Corporate Finance,active,2019-09-13
+CLT-0043,Solaris Pension 43,AU,Hedge Fund,active,2019-09-03
+CLT-0360,Acme Capital 360,US,Banking,inactive,2019-09-02
+CLT-0166,Quantum Partners 166,GB,Retail Banking,active,2019-08-24
+CLT-0333,Orion Fund 333,FR,Hedge Fund,active,2019-08-24
+CLT-0441,Pegasus Asset Management 441,BE,Insurance,active,2019-08-23
+CLT-0156,Vertex Asset Management 156,BE,Retail Banking,active,2019-08-20
+CLT-0638,Pinnacle Wealth 638,IT,Investment Banking,active,2019-08-20
+CLT-0611,Meridian Bank 611,HK,Insurance,active,2019-08-20
+CLT-0235,Vega Finance 235,SG,Private Equity,active,2019-08-15
+CLT-0675,Aurora Capital 675,US,Private Equity,active,2019-08-13
+CLT-0010,Sterling Finance 10,SG,Banking,active,2019-08-11
+CLT-0086,Sirius Bank 86,HK,Retail Banking,active,2019-08-11
+CLT-0809,Rigel Global 809,CA,Fintech,active,2019-08-03
+CLT-0363,Orion Fund 363,FR,Hedge Fund,active,2019-07-31
+CLT-0394,Nexus Group 394,NL,Pension Fund,active,2019-07-27
+CLT-0409,Phoenix Group 409,NL,Fintech,active,2019-07-26
+CLT-0861,Pegasus Asset Management 861,BE,Insurance,active,2019-07-23
+CLT-0872,Atlas Investments 872,DE,Asset Management,active,2019-07-17
+CLT-0512,Atlas Investments 512,DE,Asset Management,active,2019-07-14
+CLT-0565,Vega Finance 565,SG,Private Equity,active,2019-07-13
+CLT-0901,Zenith Partners 901,GB,Insurance,active,2019-07-11
+CLT-0297,Andromeda Insurance 297,JP,Corporate Finance,active,2019-07-09
+CLT-0641,Meridian Bank 641,HK,Insurance,active,2019-07-06
+CLT-0865,Vega Finance 865,SG,Private Equity,active,2019-07-02
+CLT-0372,Cascade Insurance 372,JP,Asset Management,active,2019-06-29
+CLT-0016,Quantum Partners 16,GB,Retail Banking,active,2019-06-28
+CLT-0642,Cascade Insurance 642,JP,Asset Management,active,2019-06-26
+CLT-0839,Rigel Global 839,CA,Fintech,active,2019-06-25
+CLT-0458,Pinnacle Wealth 458,IT,Investment Banking,active,2019-06-20
+CLT-0259,Phoenix Group 259,NL,Fintech,active,2019-06-17
+CLT-0070,Sterling Finance 70,SG,Banking,active,2019-06-14
+CLT-0328,Centaurus Pension 328,AU,Investment Banking,active,2019-06-13
+CLT-0688,Centaurus Pension 688,AU,Investment Banking,active,2019-06-09
+CLT-0543,Orion Fund 543,FR,Hedge Fund,active,2019-06-07
+CLT-0954,Saturn Trust 954,LU,Pension Fund,active,2019-06-07
+CLT-0689,Rigel Global 689,CA,Fintech,active,2019-06-05
+CLT-0298,Centaurus Pension 298,AU,Investment Banking,active,2019-06-04
+CLT-0448,Centaurus Pension 448,AU,Investment Banking,active,2019-06-03
+CLT-0216,Vertex Asset Management 216,BE,Retail Banking,active,2019-06-03
+CLT-0426,Vertex Asset Management 426,BE,Retail Banking,active,2019-05-30
+CLT-0732,Cascade Insurance 732,JP,Asset Management,active,2019-05-25
+CLT-0187,Summit Securities 187,ES,Corporate Finance,active,2019-05-24
+CLT-0196,Quantum Partners 196,GB,Retail Banking,active,2019-05-24
+CLT-0411,Pegasus Asset Management 411,BE,Insurance,active,2019-05-21
+CLT-0514,Nexus Group 514,NL,Pension Fund,active,2019-05-13
+CLT-0269,Rigel Global 269,CA,Fintech,active,2019-05-08
+CLT-0936,Vertex Asset Management 936,BE,Retail Banking,active,2019-05-07
+CLT-0573,Orion Fund 573,FR,Hedge Fund,active,2019-05-04
+CLT-0377,Helios Investments 377,DE,Corporate Finance,active,2019-04-29
+CLT-0408,Titan Fund 408,FR,Investment Banking,active,2019-04-24
+CLT-0357,Andromeda Insurance 357,JP,Corporate Finance,active,2019-04-21
+CLT-0604,Nexus Group 604,NL,Pension Fund,active,2019-04-21
+CLT-0391,Zenith Partners 391,GB,Insurance,active,2019-04-21
+CLT-0239,Rigel Global 239,CA,Fintech,active,2019-04-16
+CLT-0362,Atlas Investments 362,DE,Asset Management,active,2019-04-13
+CLT-0446,Sirius Bank 446,HK,Retail Banking,active,2019-03-27
+CLT-0862,Neptune Securities 862,ES,Asset Management,active,2019-03-25
+CLT-0251,Meridian Bank 251,HK,Insurance,active,2019-03-25
+CLT-0256,Quantum Partners 256,GB,Retail Banking,active,2019-03-18
+CLT-0935,Apex Holdings 935,CH,Private Equity,active,2019-03-09
+CLT-0988,Centaurus Pension 988,AU,Investment Banking,active,2019-03-07
+CLT-0028,Centaurus Pension 28,AU,Investment Banking,active,2019-03-05
+CLT-0806,Sirius Bank 806,HK,Retail Banking,active,2019-03-05
+CLT-0349,Phoenix Group 349,NL,Fintech,active,2019-02-26
+CLT-0585,Aurora Capital 585,US,Private Equity,active,2019-02-24
+CLT-0637,Summit Securities 637,ES,Corporate Finance,active,2019-02-23
+CLT-0595,Vega Finance 595,SG,Private Equity,active,2019-02-12
+CLT-0808,Centaurus Pension 808,AU,Investment Banking,active,2019-02-05
+CLT-0718,Centaurus Pension 718,AU,Investment Banking,active,2019-02-04
+CLT-0684,Saturn Trust 684,LU,Pension Fund,active,2019-02-01
+CLT-0706,Quantum Partners 706,GB,Retail Banking,active,2019-01-29
+CLT-0433,Solaris Pension 433,AU,Hedge Fund,active,2019-01-28
+CLT-0284,Polaris Global 284,CA,Pension Fund,active,2019-01-23
+CLT-0586,Quantum Partners 586,GB,Retail Banking,active,2019-01-20
+CLT-0625,Vega Finance 625,SG,Private Equity,active,2019-01-19
+CLT-0764,Polaris Global 764,CA,Pension Fund,active,2019-01-18
+CLT-0568,Centaurus Pension 568,AU,Investment Banking,active,2019-01-17
+CLT-0513,Orion Fund 513,FR,Hedge Fund,active,2019-01-16
+CLT-0858,Titan Fund 858,FR,Investment Banking,active,2019-01-13
+CLT-0159,Horizon Trust 159,LU,Fintech,active,2019-01-06
+CLT-0190,Sterling Finance 190,SG,Banking,active,2019-01-05
+CLT-0273,Orion Fund 273,FR,Hedge Fund,active,2018-12-27
+CLT-0109,Phoenix Group 109,NL,Fintech,active,2018-12-27
+CLT-0320,Olympus Holdings 320,CH,Banking,active,2018-12-26
+CLT-0952,Neptune Securities 952,ES,Asset Management,active,2018-12-26
+CLT-0708,Titan Fund 708,FR,Investment Banking,active,2018-12-21
+CLT-0492,Cascade Insurance 492,JP,Asset Management,active,2018-12-16
+CLT-0785,Apex Holdings 785,CH,Private Equity,active,2018-12-10
+CLT-0244,Nexus Group 244,NL,Pension Fund,active,2018-12-09
+CLT-0694,Nexus Group 694,NL,Pension Fund,active,2018-12-08
+CLT-0982,Neptune Securities 982,ES,Asset Management,active,2018-12-06
+CLT-0201,Pegasus Asset Management 201,BE,Insurance,active,2018-12-05
+CLT-0390,Acme Capital 390,US,Banking,inactive,2018-12-01
+CLT-0437,Helios Investments 437,DE,Corporate Finance,active,2018-11-29
+CLT-0423,Orion Fund 423,FR,Hedge Fund,active,2018-11-28
+CLT-0778,Centaurus Pension 778,AU,Investment Banking,active,2018-11-24
+CLT-0098,Pinnacle Wealth 98,IT,Investment Banking,active,2018-11-23
+CLT-0837,Andromeda Insurance 837,JP,Corporate Finance,active,2018-11-23
+CLT-0609,Horizon Trust 609,LU,Fintech,active,2018-11-23
+CLT-0406,Quantum Partners 406,GB,Retail Banking,active,2018-11-21
+CLT-0629,Rigel Global 629,CA,Fintech,active,2018-11-19
+CLT-0705,Aurora Capital 705,US,Private Equity,active,2018-11-18
+CLT-0593,Jupiter Wealth 593,IT,Hedge Fund,active,2018-11-18
+CLT-1000,Sterling Finance 1000,SG,Banking,under_review,2018-11-11
+CLT-0500,Olympus Holdings 500,CH,Banking,under_review,2018-10-28
+CLT-0157,Summit Securities 157,ES,Corporate Finance,active,2018-10-25
+CLT-0945,Aurora Capital 945,US,Private Equity,active,2018-10-15
+CLT-0820,Sterling Finance 820,SG,Banking,active,2018-10-05
+CLT-0679,Phoenix Group 679,NL,Fintech,active,2018-10-04
+CLT-0046,Quantum Partners 46,GB,Retail Banking,active,2018-10-03
+CLT-0719,Rigel Global 719,CA,Fintech,active,2018-09-29
+CLT-0570,Acme Capital 570,US,Banking,inactive,2018-09-28
+CLT-0133,Solaris Pension 133,AU,Hedge Fund,active,2018-09-25
+CLT-0978,Titan Fund 978,FR,Investment Banking,active,2018-09-19
+CLT-0780,Acme Capital 780,US,Banking,inactive,2018-09-17
+CLT-0302,Atlas Investments 302,DE,Asset Management,active,2018-09-15
+CLT-0203,Jupiter Wealth 203,IT,Hedge Fund,active,2018-09-07
+CLT-0849,Horizon Trust 849,LU,Fintech,active,2018-09-02
+CLT-0923,Jupiter Wealth 923,IT,Hedge Fund,active,2018-08-31
+CLT-0869,Rigel Global 869,CA,Fintech,active,2018-08-30
+CLT-0917,Helios Investments 917,DE,Corporate Finance,active,2018-08-27
+CLT-0834,Saturn Trust 834,LU,Pension Fund,active,2018-08-24
+CLT-0294,Saturn Trust 294,LU,Pension Fund,active,2018-08-19
+CLT-0844,Nexus Group 844,NL,Pension Fund,active,2018-08-10
+CLT-0486,Vertex Asset Management 486,BE,Retail Banking,active,2018-07-24
+CLT-0673,Solaris Pension 673,AU,Hedge Fund,active,2018-07-23
+CLT-0614,Polaris Global 614,CA,Pension Fund,active,2018-07-22
+CLT-0006,Vertex Asset Management 6,BE,Retail Banking,active,2018-07-16
+CLT-0659,Rigel Global 659,CA,Fintech,active,2018-07-15
+CLT-0999,Horizon Trust 999,LU,Fintech,active,2018-07-13
+CLT-0727,Summit Securities 727,ES,Corporate Finance,active,2018-07-11
+CLT-0366,Vertex Asset Management 366,BE,Retail Banking,active,2018-07-10
+CLT-0650,Olympus Holdings 650,CH,Banking,under_review,2018-07-07
+CLT-0685,Vega Finance 685,SG,Private Equity,active,2018-07-07
+CLT-0275,Apex Holdings 275,CH,Private Equity,active,2018-07-07
+CLT-0430,Sterling Finance 430,SG,Banking,active,2018-07-06
+CLT-0092,Atlas Investments 92,DE,Asset Management,active,2018-07-06
+CLT-0200,Olympus Holdings 200,CH,Banking,under_review,2018-07-05
+CLT-0943,Solaris Pension 943,AU,Hedge Fund,active,2018-07-04
+CLT-0658,Centaurus Pension 658,AU,Investment Banking,active,2018-06-26
+CLT-0601,Zenith Partners 601,GB,Insurance,active,2018-06-17
+CLT-0435,Aurora Capital 435,US,Private Equity,active,2018-06-16
+CLT-0886,Quantum Partners 886,GB,Retail Banking,active,2018-06-10
+CLT-0291,Pegasus Asset Management 291,BE,Insurance,active,2018-06-06
+CLT-0311,Meridian Bank 311,HK,Insurance,active,2018-06-02
+CLT-0456,Vertex Asset Management 456,BE,Retail Banking,active,2018-05-28
+CLT-0308,Pinnacle Wealth 308,IT,Investment Banking,active,2018-05-23
+CLT-0467,Helios Investments 467,DE,Corporate Finance,active,2018-05-22
+CLT-0027,Andromeda Insurance 27,JP,Corporate Finance,active,2018-05-21
+CLT-0958,Centaurus Pension 958,AU,Investment Banking,active,2018-05-21
+CLT-0177,Andromeda Insurance 177,JP,Corporate Finance,active,2018-05-20
+CLT-0951,Pegasus Asset Management 951,BE,Insurance,active,2018-05-19
+CLT-0395,Apex Holdings 395,CH,Private Equity,active,2018-05-12
+CLT-0343,Solaris Pension 343,AU,Hedge Fund,active,2018-04-13
+CLT-0093,Orion Fund 93,FR,Hedge Fund,active,2018-04-06
+CLT-0639,Horizon Trust 639,LU,Fintech,active,2018-03-30
+CLT-0751,Zenith Partners 751,GB,Insurance,active,2018-03-28
+CLT-0655,Vega Finance 655,SG,Private Equity,active,2018-03-27
+CLT-0990,Acme Capital 990,US,Banking,inactive,2018-03-25
+CLT-0504,Saturn Trust 504,LU,Pension Fund,active,2018-03-12
+CLT-0661,Zenith Partners 661,GB,Insurance,active,2018-03-11
+CLT-0840,Acme Capital 840,US,Banking,inactive,2018-03-06
+CLT-0933,Orion Fund 933,FR,Hedge Fund,active,2018-02-22
+CLT-0226,Quantum Partners 226,GB,Retail Banking,active,2018-02-18
+CLT-0325,Vega Finance 325,SG,Private Equity,active,2018-02-15
+CLT-0613,Solaris Pension 613,AU,Hedge Fund,active,2018-02-12
+CLT-0223,Solaris Pension 223,AU,Hedge Fund,active,2018-02-11
+CLT-0622,Neptune Securities 622,ES,Asset Management,active,2018-02-08
+CLT-0741,Pegasus Asset Management 741,BE,Insurance,active,2018-02-01
+CLT-0113,Jupiter Wealth 113,IT,Hedge Fund,active,2018-01-29
+CLT-0788,Pinnacle Wealth 788,IT,Investment Banking,active,2018-01-28
+CLT-0120,Acme Capital 120,US,Banking,inactive,2018-01-25
+CLT-0457,Summit Securities 457,ES,Corporate Finance,active,2018-01-25
+CLT-0800,Olympus Holdings 800,CH,Banking,under_review,2018-01-24
+CLT-0628,Centaurus Pension 628,AU,Investment Banking,active,2018-01-18
+CLT-0382,Neptune Securities 382,ES,Asset Management,active,2018-01-17
+CLT-0402,Cascade Insurance 402,JP,Asset Management,active,2018-01-17
+CLT-0428,Pinnacle Wealth 428,IT,Investment Banking,active,2018-01-09
+CLT-0075,Aurora Capital 75,US,Private Equity,active,2018-01-07
+CLT-0431,Meridian Bank 431,HK,Insurance,active,2018-01-05
+CLT-0517,Summit Securities 517,ES,Corporate Finance,active,2018-01-03
+CLT-0061,Zenith Partners 61,GB,Insurance,active,2018-01-03
+CLT-0965,Apex Holdings 965,CH,Private Equity,active,2018-01-02
+CLT-0829,Phoenix Group 829,NL,Fintech,active,2017-12-29
+CLT-0898,Centaurus Pension 898,AU,Investment Banking,active,2017-12-26
+CLT-0022,Neptune Securities 22,ES,Asset Management,active,2017-12-18
+CLT-0238,Centaurus Pension 238,AU,Investment Banking,active,2017-12-17
+CLT-0482,Atlas Investments 482,DE,Asset Management,active,2017-12-16
+CLT-0671,Meridian Bank 671,HK,Insurance,active,2017-12-06
+CLT-0728,Pinnacle Wealth 728,IT,Investment Banking,active,2017-12-05
+CLT-0789,Horizon Trust 789,LU,Fintech,active,2017-11-30
+CLT-0615,Aurora Capital 615,US,Private Equity,active,2017-11-22
+CLT-0414,Saturn Trust 414,LU,Pension Fund,active,2017-11-21
+CLT-0922,Neptune Securities 922,ES,Asset Management,active,2017-11-20
+CLT-0580,Sterling Finance 580,SG,Banking,active,2017-11-20
+CLT-0400,Sterling Finance 400,SG,Banking,under_review,2017-11-17
+CLT-0932,Atlas Investments 932,DE,Asset Management,active,2017-11-17
+CLT-0770,Olympus Holdings 770,CH,Banking,active,2017-11-14
+CLT-0866,Sirius Bank 866,HK,Retail Banking,active,2017-11-13
+CLT-0023,Jupiter Wealth 23,IT,Hedge Fund,active,2017-11-12
+CLT-0318,Titan Fund 318,FR,Investment Banking,active,2017-11-12
+CLT-0249,Horizon Trust 249,LU,Fintech,active,2017-11-11
+CLT-0971,Meridian Bank 971,HK,Insurance,active,2017-10-29
+CLT-0078,Titan Fund 78,FR,Investment Banking,active,2017-10-29
+CLT-0138,Titan Fund 138,FR,Investment Banking,active,2017-10-29
+CLT-0490,Sterling Finance 490,SG,Banking,active,2017-10-23
+CLT-0934,Nexus Group 934,NL,Pension Fund,active,2017-10-13
+CLT-0015,Aurora Capital 15,US,Private Equity,active,2017-10-10
+CLT-0102,Cascade Insurance 102,JP,Asset Management,active,2017-10-08
+CLT-0880,Sterling Finance 880,SG,Banking,active,2017-10-07
+CLT-0796,Quantum Partners 796,GB,Retail Banking,active,2017-09-22
+CLT-0176,Sirius Bank 176,HK,Retail Banking,active,2017-09-20
+CLT-0523,Solaris Pension 523,AU,Hedge Fund,active,2017-09-18
+CLT-0841,Zenith Partners 841,GB,Insurance,active,2017-09-17
+CLT-0158,Pinnacle Wealth 158,IT,Investment Banking,active,2017-09-07
+CLT-0669,Horizon Trust 669,LU,Fintech,active,2017-09-04
+CLT-0646,Quantum Partners 646,GB,Retail Banking,active,2017-09-04
+CLT-0777,Andromeda Insurance 777,JP,Corporate Finance,active,2017-09-01
+CLT-0134,Polaris Global 134,CA,Pension Fund,active,2017-08-31
+CLT-0878,Pinnacle Wealth 878,IT,Investment Banking,active,2017-08-30
+CLT-0527,Helios Investments 527,DE,Corporate Finance,active,2017-08-25
+CLT-0579,Horizon Trust 579,LU,Fintech,active,2017-08-23
+CLT-0470,Olympus Holdings 470,CH,Banking,active,2017-08-21
+CLT-0977,Helios Investments 977,DE,Corporate Finance,active,2017-08-16
+CLT-0021,Pegasus Asset Management 21,BE,Insurance,active,2017-08-16
+CLT-0459,Horizon Trust 459,LU,Fintech,active,2017-08-11
+CLT-0444,Saturn Trust 444,LU,Pension Fund,active,2017-08-08
+CLT-0892,Neptune Securities 892,ES,Asset Management,active,2017-08-04
+CLT-0392,Atlas Investments 392,DE,Asset Management,active,2017-07-27
+CLT-0716,Sirius Bank 716,HK,Retail Banking,active,2017-07-19
+CLT-0474,Saturn Trust 474,LU,Pension Fund,active,2017-07-10
+CLT-0008,Pinnacle Wealth 8,IT,Investment Banking,active,2017-07-06
+CLT-0816,Vertex Asset Management 816,BE,Retail Banking,active,2017-07-05
+CLT-0344,Polaris Global 344,CA,Pension Fund,active,2017-06-30
+CLT-0469,Phoenix Group 469,NL,Fintech,active,2017-06-30
+CLT-0557,Helios Investments 557,DE,Corporate Finance,active,2017-06-26
+CLT-0243,Orion Fund 243,FR,Hedge Fund,active,2017-06-24
+CLT-0165,Aurora Capital 165,US,Private Equity,active,2017-06-24
+CLT-0319,Phoenix Group 319,NL,Fintech,active,2017-06-15
+CLT-0505,Vega Finance 505,SG,Private Equity,active,2017-06-14
+CLT-0295,Vega Finance 295,SG,Private Equity,active,2017-06-14
+CLT-0767,Helios Investments 767,DE,Corporate Finance,active,2017-06-11
+CLT-0695,Apex Holdings 695,CH,Private Equity,active,2017-06-10
+CLT-0984,Saturn Trust 984,LU,Pension Fund,active,2017-06-10
+CLT-0212,Atlas Investments 212,DE,Asset Management,active,2017-06-01
+CLT-0649,Phoenix Group 649,NL,Fintech,active,2017-05-23
+CLT-0832,Neptune Securities 832,ES,Asset Management,active,2017-05-19
+CLT-0089,Rigel Global 89,CA,Fintech,active,2017-05-19
+CLT-0506,Sirius Bank 506,HK,Retail Banking,active,2017-05-13
+CLT-0896,Sirius Bank 896,HK,Retail Banking,active,2017-05-05
+CLT-0152,Atlas Investments 152,DE,Asset Management,active,2017-05-05
+CLT-0384,Saturn Trust 384,LU,Pension Fund,active,2017-04-30
+CLT-0722,Atlas Investments 722,DE,Asset Management,active,2017-04-23
+CLT-0399,Horizon Trust 399,LU,Fintech,active,2017-04-20
+CLT-0906,Vertex Asset Management 906,BE,Retail Banking,active,2017-04-09
+CLT-0783,Orion Fund 783,FR,Hedge Fund,active,2017-04-05
+CLT-0633,Orion Fund 633,FR,Hedge Fund,active,2017-04-03
+CLT-0807,Andromeda Insurance 807,JP,Corporate Finance,active,2017-03-25
+CLT-0769,Phoenix Group 769,NL,Fintech,active,2017-03-20
+CLT-0278,Pinnacle Wealth 278,IT,Investment Banking,active,2017-03-15
+CLT-0851,Meridian Bank 851,HK,Insurance,active,2017-03-14
+CLT-0576,Vertex Asset Management 576,BE,Retail Banking,active,2017-03-10
+CLT-0262,Neptune Securities 262,ES,Asset Management,active,2017-03-09
+CLT-0619,Phoenix Group 619,NL,Fintech,active,2017-03-08
+CLT-0525,Aurora Capital 525,US,Private Equity,active,2017-03-07
+CLT-0569,Rigel Global 569,CA,Fintech,active,2017-03-06
+CLT-0794,Polaris Global 794,CA,Pension Fund,active,2017-02-26
+CLT-0081,Pegasus Asset Management 81,BE,Insurance,active,2017-02-26
+CLT-0227,Helios Investments 227,DE,Corporate Finance,active,2017-02-24
+CLT-0540,Acme Capital 540,US,Banking,inactive,2017-02-18
+CLT-0082,Neptune Securities 82,ES,Asset Management,active,2017-02-17
+CLT-0341,Meridian Bank 341,HK,Insurance,active,2017-02-11
+CLT-0495,Aurora Capital 495,US,Private Equity,active,2017-02-08
+CLT-0225,Aurora Capital 225,US,Private Equity,active,2017-02-05
+CLT-0323,Jupiter Wealth 323,IT,Hedge Fund,active,2017-02-04
+CLT-0338,Pinnacle Wealth 338,IT,Investment Banking,active,2017-01-30
+CLT-0288,Titan Fund 288,FR,Investment Banking,active,2017-01-29
+CLT-0940,Sterling Finance 940,SG,Banking,active,2017-01-26
+CLT-0662,Atlas Investments 662,DE,Asset Management,active,2017-01-21
+CLT-0271,Zenith Partners 271,GB,Insurance,active,2017-01-18
+CLT-0657,Andromeda Insurance 657,JP,Corporate Finance,active,2017-01-17
+CLT-0773,Jupiter Wealth 773,IT,Hedge Fund,active,2017-01-16
+CLT-0059,Rigel Global 59,CA,Fintech,active,2017-01-03
+CLT-0968,Pinnacle Wealth 968,IT,Investment Banking,active,2017-01-02
+CLT-0578,Pinnacle Wealth 578,IT,Investment Banking,active,2016-12-30
+CLT-0112,Neptune Securities 112,ES,Asset Management,active,2016-12-27
+CLT-0094,Nexus Group 94,NL,Pension Fund,active,2016-12-22
+CLT-0559,Phoenix Group 559,NL,Fintech,active,2016-12-14
+CLT-0420,Acme Capital 420,US,Banking,inactive,2016-12-13
+CLT-0749,Rigel Global 749,CA,Fintech,active,2016-11-30
+CLT-0668,Pinnacle Wealth 668,IT,Investment Banking,active,2016-11-29
+CLT-0608,Pinnacle Wealth 608,IT,Investment Banking,active,2016-11-26
+CLT-0626,Sirius Bank 626,HK,Retail Banking,active,2016-11-20
+CLT-0229,Phoenix Group 229,NL,Fintech,active,2016-11-19
+CLT-0868,Centaurus Pension 868,AU,Investment Banking,active,2016-11-12
+CLT-0478,Centaurus Pension 478,AU,Investment Banking,active,2016-11-10
+CLT-0108,Titan Fund 108,FR,Investment Banking,active,2016-11-07
+CLT-0687,Andromeda Insurance 687,JP,Corporate Finance,active,2016-11-07
+CLT-0925,Vega Finance 925,SG,Private Equity,active,2016-11-04
+CLT-0746,Sirius Bank 746,HK,Retail Banking,active,2016-10-30
+CLT-0484,Nexus Group 484,NL,Pension Fund,active,2016-10-28
+CLT-0591,Pegasus Asset Management 591,BE,Insurance,active,2016-10-26
+CLT-0995,Apex Holdings 995,CH,Private Equity,active,2016-10-04
+CLT-0418,Centaurus Pension 418,AU,Investment Banking,active,2016-10-04
+CLT-0508,Centaurus Pension 508,AU,Investment Banking,active,2016-10-01
+CLT-0710,Olympus Holdings 710,CH,Banking,active,2016-10-01
+CLT-0640,Sterling Finance 640,SG,Banking,active,2016-09-18
+CLT-0734,Polaris Global 734,CA,Pension Fund,active,2016-09-15
+CLT-0870,Acme Capital 870,US,Banking,inactive,2016-09-04
+CLT-0894,Saturn Trust 894,LU,Pension Fund,active,2016-09-03
+CLT-0322,Neptune Securities 322,ES,Asset Management,active,2016-08-30
+CLT-0296,Sirius Bank 296,HK,Retail Banking,active,2016-08-29
+CLT-0268,Centaurus Pension 268,AU,Investment Banking,active,2016-08-27
+CLT-0037,Summit Securities 37,ES,Corporate Finance,active,2016-08-27
+CLT-0498,Titan Fund 498,FR,Investment Banking,active,2016-08-23
+CLT-0468,Titan Fund 468,FR,Investment Banking,active,2016-08-22
+CLT-0217,Summit Securities 217,ES,Corporate Finance,active,2016-08-16
+CLT-0312,Cascade Insurance 312,JP,Asset Management,active,2016-08-15
+CLT-0606,Vertex Asset Management 606,BE,Retail Banking,active,2016-08-07
+CLT-0454,Nexus Group 454,NL,Pension Fund,active,2016-08-02
+CLT-0786,Vertex Asset Management 786,BE,Retail Banking,active,2016-07-31
+CLT-0697,Summit Securities 697,ES,Corporate Finance,active,2016-07-27
+CLT-0779,Rigel Global 779,CA,Fintech,active,2016-07-25
+CLT-0887,Helios Investments 887,DE,Corporate Finance,active,2016-07-21
+CLT-0429,Horizon Trust 429,LU,Fintech,active,2016-07-18
+CLT-0811,Zenith Partners 811,GB,Insurance,active,2016-07-09
+CLT-0462,Cascade Insurance 462,JP,Asset Management,active,2016-07-05
+CLT-0199,Phoenix Group 199,NL,Fintech,active,2016-07-05
