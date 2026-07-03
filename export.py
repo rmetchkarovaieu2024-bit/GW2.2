@@ -76,7 +76,7 @@ def run_export(definition: dict, output_dir: str, upload: bool = True, triggered
             remote_path = None
             if upload:
                 deliver_path, deliver_filename = local_path, remote_filename
-                if definition.get("zip", True):
+                if definition.get("zip", False):
                     deliver_path, deliver_filename = zip_export_file(local_path, remote_filename)
                     logger.info(f"zipped -> {deliver_path}")
 

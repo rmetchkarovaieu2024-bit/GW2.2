@@ -8,7 +8,7 @@
 # delivery: "sftp" (default) or "email"
 #   - sftp: uploaded to SFTP_REMOTE_DIR on the configured SFTP server
 #   - email: sent as an attachment to the addresses in email_to, via SMTP_* config
-# zip: true (default) or false — whether the delivered file is compressed into
+# zip: true or false (default) — whether the delivered file is compressed into
 #   a .zip first. Only affects delivery; --local-only always writes the plain file.
 #
 # These queries target the financial demo dataset in scripts/init_db.sql
