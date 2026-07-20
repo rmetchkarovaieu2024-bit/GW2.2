@@ -69,3 +69,155 @@ smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepte
 2026-07-03 17:06:07 [INFO    ] export               | [clients_csv] writing csv -> output/clients_2026-07-03.csv
 2026-07-03 17:06:07 [INFO    ] export               | [clients_csv] uploading via SFTP -> clients_2026-07-03.csv
 2026-07-03 17:06:08 [INFO    ] export               | [clients_csv] done. Remote path: /incoming/clients_2026-07-03.csv
+2026-07-15 10:36:48 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-15 10:36:48 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-15 10:36:48 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-15.csv
+2026-07-15 10:36:48 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-15.csv
+2026-07-15 10:36:49 [ERROR   ] __main__             | [clients_email_digest] export failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-47f464c30a9sm13731259f8f.31 - gsmtp')
+Traceback (most recent call last):
+  File "/Users/rayametche/Downloads/export-lite/export.py", line 86, in run_export
+    remote_path = email_delivery.send(deliver_path, deliver_filename, recipients)
+  File "/Users/rayametche/Downloads/export-lite/delivery/email_delivery.py", line 35, in send
+    smtp.login(username, password)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 745, in login
+    raise last_exception
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 734, in login
+    (code, resp) = self.auth(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 657, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-47f464c30a9sm13731259f8f.31 - gsmtp')
+2026-07-15 10:38:14 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-15 10:38:14 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-15 10:38:14 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-15.csv
+2026-07-15 10:38:14 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-15.csv
+2026-07-15 10:38:14 [ERROR   ] __main__             | [clients_email_digest] export failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4950873270esm127344725e9.6 - gsmtp')
+Traceback (most recent call last):
+  File "/Users/rayametche/Downloads/export-lite/export.py", line 86, in run_export
+    remote_path = email_delivery.send(deliver_path, deliver_filename, recipients)
+  File "/Users/rayametche/Downloads/export-lite/delivery/email_delivery.py", line 35, in send
+    smtp.login(username, password)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 745, in login
+    raise last_exception
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 734, in login
+    (code, resp) = self.auth(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 657, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4950873270esm127344725e9.6 - gsmtp')
+2026-07-15 10:39:32 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-15 10:39:32 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-15 10:39:32 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-15.csv
+2026-07-15 10:39:32 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-15.csv
+2026-07-15 10:39:33 [ERROR   ] __main__             | [clients_email_digest] export failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-47f464c4320sm13756294f8f.32 - gsmtp')
+Traceback (most recent call last):
+  File "/Users/rayametche/Downloads/export-lite/export.py", line 86, in run_export
+    remote_path = email_delivery.send(deliver_path, deliver_filename, recipients)
+  File "/Users/rayametche/Downloads/export-lite/delivery/email_delivery.py", line 35, in send
+    smtp.login(username, password)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 745, in login
+    raise last_exception
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 734, in login
+    (code, resp) = self.auth(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 657, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-47f464c4320sm13756294f8f.32 - gsmtp')
+2026-07-15 10:41:52 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-15 10:41:52 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-15 10:41:52 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-15.csv
+2026-07-15 10:41:52 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-15.csv
+2026-07-15 10:41:54 [INFO    ] __main__             | [clients_email_digest] done. Sent to: raya.metche@gmail.com
+2026-07-15 13:13:08 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-15 13:13:08 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-15 13:13:08 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-15.csv
+2026-07-15 13:13:08 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-15.csv
+2026-07-15 13:13:08 [ERROR   ] __main__             | [clients_email_digest] export failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4950a2f635dsm147144135e9.12 - gsmtp')
+Traceback (most recent call last):
+  File "/Users/rayametche/Downloads/export-lite/export.py", line 86, in run_export
+    remote_path = email_delivery.send(deliver_path, deliver_filename, recipients)
+  File "/Users/rayametche/Downloads/export-lite/delivery/email_delivery.py", line 35, in send
+    smtp.login(username, password)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 745, in login
+    raise last_exception
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 734, in login
+    (code, resp) = self.auth(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 657, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4950a2f635dsm147144135e9.12 - gsmtp')
+2026-07-15 13:13:56 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-15 13:13:56 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-15 13:13:56 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-15.csv
+2026-07-15 13:13:56 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-15.csv
+2026-07-15 13:13:56 [ERROR   ] __main__             | [clients_email_digest] export failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-47f4635a935sm15012548f8f.11 - gsmtp')
+Traceback (most recent call last):
+  File "/Users/rayametche/Downloads/export-lite/export.py", line 86, in run_export
+    remote_path = email_delivery.send(deliver_path, deliver_filename, recipients)
+  File "/Users/rayametche/Downloads/export-lite/delivery/email_delivery.py", line 35, in send
+    smtp.login(username, password)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 745, in login
+    raise last_exception
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 734, in login
+    (code, resp) = self.auth(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 657, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-47f4635a935sm15012548f8f.11 - gsmtp')
+2026-07-15 13:15:43 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-15 13:15:43 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-15 13:15:43 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-15.csv
+2026-07-15 13:15:43 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-15.csv
+2026-07-15 13:15:44 [ERROR   ] __main__             | [clients_email_digest] export failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-47f464a974csm17122480f8f.18 - gsmtp')
+Traceback (most recent call last):
+  File "/Users/rayametche/Downloads/export-lite/export.py", line 86, in run_export
+    remote_path = email_delivery.send(deliver_path, deliver_filename, recipients)
+  File "/Users/rayametche/Downloads/export-lite/delivery/email_delivery.py", line 35, in send
+    smtp.login(username, password)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 745, in login
+    raise last_exception
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 734, in login
+    (code, resp) = self.auth(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 657, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-47f464a974csm17122480f8f.18 - gsmtp')
+2026-07-15 13:16:06 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-15 13:16:06 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-15 13:16:06 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-15.csv
+2026-07-15 13:16:06 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-15.csv
+2026-07-15 13:16:06 [ERROR   ] __main__             | [clients_email_digest] export failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-495087366c0sm254141775e9.7 - gsmtp')
+Traceback (most recent call last):
+  File "/Users/rayametche/Downloads/export-lite/export.py", line 86, in run_export
+    remote_path = email_delivery.send(deliver_path, deliver_filename, recipients)
+  File "/Users/rayametche/Downloads/export-lite/delivery/email_delivery.py", line 35, in send
+    smtp.login(username, password)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 745, in login
+    raise last_exception
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 734, in login
+    (code, resp) = self.auth(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/smtplib.py", line 657, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-495087366c0sm254141775e9.7 - gsmtp')
+2026-07-15 13:16:30 [INFO    ] __main__             | [clients_email_digest] running query...
+2026-07-15 13:16:30 [INFO    ] __main__             | [clients_email_digest] got 1000 rows
+2026-07-15 13:16:30 [INFO    ] __main__             | [clients_email_digest] writing csv -> ./output/clients_digest_2026-07-15.csv
+2026-07-15 13:16:30 [INFO    ] __main__             | [clients_email_digest] emailing to raya.metche@gmail.com -> clients_digest_2026-07-15.csv
+2026-07-15 13:16:33 [INFO    ] __main__             | [clients_email_digest] done. Sent to: raya.metche@gmail.com
+2026-07-15 13:17:39 [INFO    ] __main__             | [weekly_revenue_report] running query...
+2026-07-15 13:17:39 [INFO    ] __main__             | [weekly_revenue_report] got 0 rows
+2026-07-15 13:17:39 [INFO    ] __main__             | [weekly_revenue_report] writing excel -> ./output/weekly_revenue_report_2026-07-15.xlsx
+2026-07-15 13:17:39 [INFO    ] __main__             | [weekly_revenue_report] uploading via SFTP -> weekly_revenue_report_2026-07-15.xlsx
+2026-07-15 13:17:40 [INFO    ] __main__             | [weekly_revenue_report] done. Remote path: /incoming/weekly_revenue_report_2026-07-15.xlsx
+2026-07-15 13:29:58 [INFO    ] __main__             | [weekly_revenue_report] running query...
+2026-07-15 13:29:58 [INFO    ] __main__             | [weekly_revenue_report] got 0 rows
+2026-07-15 13:29:58 [INFO    ] __main__             | [weekly_revenue_report] writing excel -> ./output/weekly_revenue_report_2026-07-15.xlsx
+2026-07-15 13:29:58 [INFO    ] __main__             | [weekly_revenue_report] uploading via SFTP -> weekly_revenue_report_2026-07-15.xlsx
+2026-07-15 13:29:59 [INFO    ] __main__             | [weekly_revenue_report] done. Remote path: /incoming/weekly_revenue_report_2026-07-15.xlsx
+2026-07-17 10:29:07 [INFO    ] __main__             | [daily_transactions] running query...
+2026-07-17 10:29:07 [INFO    ] __main__             | [daily_transactions] got 55 rows
+2026-07-17 10:29:07 [INFO    ] __main__             | [daily_transactions] writing csv -> ./output/daily_transactions_2026-07-17.csv
+2026-07-17 10:29:07 [INFO    ] __main__             | [daily_transactions] done. Local path: ./output/daily_transactions_2026-07-17.csv
+2026-07-17 10:37:02 [INFO    ] __main__             | [weekly_revenue_report] running query...
+2026-07-17 10:37:02 [INFO    ] __main__             | [weekly_revenue_report] got 4 rows
+2026-07-17 10:37:02 [INFO    ] __main__             | [weekly_revenue_report] writing excel -> ./output/weekly_revenue_report_2026-07-17.xlsx
+2026-07-17 10:37:02 [INFO    ] __main__             | [weekly_revenue_report] done. Local path: ./output/weekly_revenue_report_2026-07-17.xlsx
+2026-07-17 10:45:00 [INFO    ] __main__             | [daily_transactions] running query...
+2026-07-17 10:45:00 [INFO    ] __main__             | [daily_transactions] got 55 rows
+2026-07-17 10:45:00 [INFO    ] __main__             | [daily_transactions] writing csv -> ./output/daily_transactions_2026-07-17.csv
+2026-07-17 10:45:00 [INFO    ] __main__             | [daily_transactions] uploading via SFTP -> daily_transactions_2026-07-17.csv
+2026-07-17 10:45:00 [INFO    ] __main__             | [daily_transactions] done. Remote path: /incoming/daily_transactions_2026-07-17.csv

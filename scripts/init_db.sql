@@ -4,6 +4,9 @@
 -- Auto-run by docker-compose on first boot (mounted into
 -- /docker-entrypoint-initdb.d). To re-run after editing, wipe the volume:
 --   docker compose down -v && docker compose up -d
+--
+-- The export_definitions table lives separately in init_definitions.sql so
+-- reseeding this dataset never touches it (and vice versa).
 -- ===========================================================================
 
 -- Clean up first (safe re-run)

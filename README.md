@@ -3,7 +3,8 @@
 A stripped-down version of the export system: **CSV/Excel only, SFTP or email delivery,
 on-demand only.** No scheduler, no queue, no plugin registry — just a CLI script with a
 full audit trail of every run (ported from the tracking part of the
-[GW repo](https://github.com/rmetchkarovaieu2024-bit/GW)).
+[GW repo](https://github.com/rmetchkarovaieu2024-bit/GW)). What to export is defined in
+the database itself (the `export_definitions` table), not a config file.
 
 ## Setup
 
@@ -36,7 +37,7 @@ docker compose up -d
 - `top_tier_client_feed`'s query referenced `c.email`, but the column is
   `contact_email`. Fixed.
 
-All four exports in `definitions.yaml` were run against a live copy of this
+All six exports in `export_definitions` (see below) were run against a live copy of this
 dataset end-to-end (query -> DataFrame -> CSV/Excel file -> SFTP upload) and
 confirmed to return real rows.
 
@@ -58,18 +59,58 @@ is actually delivered externally — open http://localhost:8025 to see caught ma
 
 ## Configure what to export
 
-Edit `definitions.yaml`. Each entry needs:
+What gets exported lives in the `export_definitions` table (in `DATABASE_URL`), not a
+config file — this used to be `definitions.yaml`, but that file is gone now; nothing
+reads it anymore. `scripts/init_definitions.sql` creates the table and seeds the same
+six exports that used to be in the YAML — kept separate from `scripts/init_db.sql`
+(the financial demo dataset) so reseeding one never drops or recreates the other.
 
-```yaml
-- name: my_export
-  query: "SELECT * FROM my_table WHERE ..."
-  format: csv        # or excel
-  remote_filename: "my_export_{date}.csv"   # {date} -> YYYY-MM-DD
-  delivery: sftp     # or "email" (defaults to sftp if omitted)
-  email_to:          # required when delivery: email
-    - someone@example.com
-  zip: false         # or true to zip the file before delivery (defaults to false)
+| column            | meaning                                                                 |
+|-------------------|--------------------------------------------------------------------------|
+| `name`            | unique identifier, used with `--name`                                    |
+| `description`     | shown by `--list`                                                        |
+| `query`           | the SQL to run                                                           |
+| `format`          | `csv` or `excel`                                                         |
+| `remote_filename` | supports a `{date}` placeholder -> `YYYY-MM-DD`                          |
+| `delivery`        | `sftp` (default) or `email`                                              |
+| `email_to`        | JSON array of addresses, required when `delivery = 'email'`              |
+| `zip`             | boolean, default `false` — zip the file before delivery                  |
+| `format_config`   | JSON, e.g. `{"delimiter": "|"}` or `{"sheet_name": "..."}`                |
+| `is_active`       | boolean, default `true` — inactive exports are hidden from `--list`/`--all`/`--name` |
+
+Add, edit, or retire an export with plain SQL:
+
+```sql
+-- add a new export
+INSERT INTO export_definitions (name, description, query, format, remote_filename, delivery)
+VALUES (
+    'my_export',
+    'What this export is for',
+    'SELECT * FROM my_table WHERE ...',
+    'csv',
+    'my_export_{date}.csv',
+    'sftp'
+);
+
+-- edit an existing one
+UPDATE export_definitions
+SET query = 'SELECT * FROM my_table WHERE status = ''active''',
+    updated_at = NOW()
+WHERE name = 'my_export';
+
+-- retire one without deleting its history
+UPDATE export_definitions SET is_active = FALSE WHERE name = 'clients_csv';
 ```
+
+`definitions_repo.py` is what `export.py` calls to read this table (`load_definitions()`),
+mirroring how `tracking.py` writes to `export_logs`/`log_events` — same SQLAlchemy Core
+style, no ORM.
+
+One tradeoff worth knowing: since these definitions live in the database instead of a
+file in version control, git no longer gives you a history of who changed a query and
+when. If that matters to you, that's now on you to solve some other way (a changelog
+table, requiring PRs that run the `UPDATE`/`INSERT` statements, etc.) — nothing here
+does it automatically.
 
 ## Run
 
@@ -124,22 +165,23 @@ ORDER BY ts;
 ```
 
 If your local Postgres volume was created before these tables existed, recreate it with
-`docker compose down -v && docker compose up -d` (or run the `export_logs`/`log_events`
-blocks from `scripts/init_db.sql` manually).
+`docker compose down -v && docker compose up -d` (or run `scripts/init_db.sql` and/or
+`scripts/init_definitions.sql` against the running container manually).
 
 ## Files
 
 ```
 export.py                    CLI entrypoint
 db.py                        runs the SQL query, returns a DataFrame
+definitions_repo.py          reads what-to-export from the export_definitions table
 tracking.py                  records runs (export_logs) and log lines (log_events) to the DB
 logging_setup.py             console + rotating file + DB logging (wires DBLogHandler into logging)
 exporters/csv_exporter.py    DataFrame -> .csv
 exporters/excel_exporter.py  DataFrame -> .xlsx
 delivery/sftp_delivery.py    uploads a file over SFTP (password or key auth)
 delivery/email_delivery.py   emails a file as an attachment via SMTP
-definitions.yaml             what to export
-scripts/init_db.sql          creates + seeds the example Postgres tables + export_logs/log_events
+scripts/init_db.sql          creates + seeds the example Postgres tables, plus export_logs/log_events
+scripts/init_definitions.sql creates + seeds export_definitions (what used to be definitions.yaml)
 docker-compose.yml           spins up the example Postgres DB + local test SFTP + SMTP servers
 .env.example                 DB + SFTP + SMTP + logging config template
 ```
@@ -149,5 +191,7 @@ docker-compose.yml           spins up the example Postgres DB + local test SFTP 
 - `DATABASE_URL` is a standard SQLAlchemy URL, so Postgres/MySQL/SQLite all work —
   swap the driver package in `requirements.txt` if you're not on Postgres.
 - SFTP auth uses a password OR a private key (`SFTP_PRIVATE_KEY_PATH`); key wins if both are set.
+- `PyYAML` was removed from `requirements.txt` — nothing parses YAML anymore now that
+  export definitions live in the database.
 - There's no retry logic or scheduler here on purpose — add one later if you need it,
   but it wasn't in scope for "simpler."

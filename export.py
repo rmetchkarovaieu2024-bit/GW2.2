@@ -13,13 +13,13 @@ import sys
 import zipfile
 from datetime import date
 
-import yaml
 from dotenv import load_dotenv
 
 from db import run_query
 from exporters import csv_exporter, excel_exporter
 from delivery import sftp_delivery, email_delivery
 from logging_setup import configure_logging, get_logger, ExportLogContext
+from definitions_repo import load_definitions
 import tracking
 
 EXPORTERS = {
@@ -27,15 +27,7 @@ EXPORTERS = {
     "excel": excel_exporter,
 }
 
-DEFINITIONS_PATH = os.path.join(os.path.dirname(__file__), "definitions.yaml")
-
 logger = get_logger(__name__)
-
-
-def load_definitions():
-    with open(DEFINITIONS_PATH) as f:
-        data = yaml.safe_load(f)
-    return {d["name"]: d for d in data["exports"]}
 
 
 def zip_export_file(local_path: str, remote_filename: str) -> tuple:
@@ -105,8 +97,8 @@ def main():
 
     parser = argparse.ArgumentParser(description="Run an on-demand CSV/Excel export and deliver it via SFTP or email.")
     group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument("--name", help="Name of a single export to run (see definitions.yaml)")
-    group.add_argument("--all", action="store_true", help="Run every export defined in definitions.yaml")
+    group.add_argument("--name", help="Name of a single export to run (see --list)")
+    group.add_argument("--all", action="store_true", help="Run every export defined in export_definitions")
     group.add_argument("--list", action="store_true", help="List available export names and exit")
     parser.add_argument("--local-only", action="store_true", help="Write export output locally only; skip SFTP/email delivery")
     args = parser.parse_args()
